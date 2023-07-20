@@ -28,19 +28,8 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setComponent(new ComponentName("com.google.android.gms", "com.google.android.gms.app.settings.GoogleSettingsLink"));
-                try {
-                    startActivity(intent);
-                } catch (ActivityNotFoundException e) {
-                    // Define what your app should do if no activity can handle the intent.
-                    intent.setComponent(new ComponentName("com.google.android.gms", "com.google.android.gms.app.settings.GoogleSettingsActivity"));
-                    try {
-                        startActivity(intent);
-                    } catch (ActivityNotFoundException f) {
-                        // Define what your app should do if no activity can handle the intent.
-                        Toast.makeText(getContext(), "Google Play Services is not installed", Toast.LENGTH_SHORT).show();
-                    }
-                }
+                intent.setComponent(new ComponentName("com.j.jOS", "com.j.jOS.info.InfoActivity"));
+                startActivity(intent);
             }
         });
         return view;

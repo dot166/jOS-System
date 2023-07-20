@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">jOS System</string>
+    <string name="Settings_name">jOS Settings</string>
+    <string name="system_settings">System Settings</string>
 </resources>
