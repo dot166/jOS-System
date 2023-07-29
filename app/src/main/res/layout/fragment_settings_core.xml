@@ -51,12 +51,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/button2"
-        android:text="jOS Launcher" />
+        android:text="jOS Launcher Settings" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/button3"
-        android:text="jOS KB" />
+        android:text="jOS KB Settings" />
 </RelativeLayout>

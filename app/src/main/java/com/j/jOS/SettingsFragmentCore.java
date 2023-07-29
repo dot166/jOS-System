@@ -72,7 +72,7 @@ public class SettingsFragmentCore extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setComponent(new ComponentName("com.j.inputmethod", "com.j.inputmethod.latin.settings.SettingsActivity"));
+                intent.setComponent(new ComponentName("com.j.inputmethod.latin", "com.j.inputmethod.latin.setup.SetupWizardActivity"));
                 startActivity(intent);
             }
         });
