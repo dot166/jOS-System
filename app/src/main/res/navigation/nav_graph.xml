@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/wallpapersListFragment">
+
+    <fragment
+        android:id="@+id/wallpapersListFragment"
+        android:name="com.j.Wallpapers.WallpapersListFragment"
+        android:label="fragment_listwallpapers"
+        tools:layout="@layout/fragment_listwallpapers" >
+        <action
+            android:id="@+id/action_wallpapersListFragment_to_lock"
+            app:destination="@id/lock" />
+    </fragment>
+    <fragment
+        android:id="@+id/lock"
+        android:name="com.j.Wallpapers.lock"
+        android:label="fragment_lock"
+        tools:layout="@layout/fragment_lock">
+        <action
+            android:id="@+id/action_lock_to_exit_now"
+            app:destination="@id/exit_now" />
+    </fragment>
+    <fragment
+        android:id="@+id/exit_now"
+        android:name="com.j.Wallpapers.exit_now"
+        android:label="fragment_exit_now"
+        tools:layout="@layout/fragment_exit_now" />
+</navigation>

@@ -2,18 +2,20 @@ plugins {
     id 'com.android.application'
 }
 
-final def sdkversion = "33 (android 13)"
+final int sdkversion = 33
+final def appid = "com.j.jOS"
+final def appver = "app=13.9 icon=2.0 wall=2.0"
 
 android {
-    namespace 'com.j.jOS'
-    compileSdk 33
+    namespace appid
+    compileSdk sdkversion
 
     defaultConfig {
-        applicationId "com.j.jOS"
-        minSdk 33
-        targetSdk 33
-        versionCode 13
-        versionName "13.7"
+        applicationId appid
+        minSdk sdkversion
+        targetSdk sdkversion
+        versionCode sdkversion
+        versionName appver
     }
 
     buildTypes {
@@ -27,8 +29,9 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     applicationVariants.all { variant ->
-        variant.resValue "string", "version", variant.versionName
+        resValue ("string", "app_version", "${appver}")
         resValue ("string", "sdkversion", "${sdkversion}")
+        resValue ("string", "appid", "${appid}")
     }
 }
 
@@ -37,4 +40,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.0'
+    implementation 'androidx.navigation:navigation-ui:2.5.0'
+    implementation fileTree(dir: 'libs', include: ['lineage-sdk.jar'])
+    implementation "androidx.preference:preference:1.2.1"
+
+    // glide dependencies
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
 }

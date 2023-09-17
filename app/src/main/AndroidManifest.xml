@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,8 +10,7 @@
         android:label="@string/app_name"
         android:icon="@mipmap/ic_app"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JOSSystem"
-        tools:targetApi="31">
+        android:theme="@style/Theme.JOSSystem">
         <activity
             android:name=".SettingsActivity"
             android:exported="true"
@@ -23,7 +23,46 @@
             </intent-filter>
         </activity>
         <activity android:name=".info.InfoActivity" />
-    </application>
-<!--    android:icon="@mipmap/ic_launcher" -->
+        <activity
+            android:name="com.j.icons.MainActivity"
+            android:icon="@mipmap/ic_app"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.lineageos.trebuchet.ICON_PACK" />
+                <!--<action android:name="com.fede.launcher.THEME_ICONPACK" />
+                <action android:name="com.anddoes.launcher.THEME" />
+                <action android:name="com.novalauncher.THEME" />
+                <action android:name="com.teslacoilsw.launcher.THEME" />
+                <action android:name="com.gau.go.launcherex.theme" />
+                <action android:name="org.adw.launcher.THEMES" />
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
+                <action android:name="com.lineageos.trebuchet.THEME" />-->
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.j.Wallpapers.WallpaperActivity"
+            android:exported="true"
+            android:label="@string/wallpaper_app_name"
+            android:icon="@mipmap/ic_app"
+            android:theme="@style/Theme.Wallpapers">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.j.Wallpapers.MyWallpaperService"
+            android:enabled="true"
+            android:label="DVD Live Wallpaper"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/mywallpaper" />
+        </service>
+    </application>
 </manifest>

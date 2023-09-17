@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">jOS System</string>
-    <string name="Settings_name">jOS Settings</string>
+    <string name="Settings_name">Settings</string>
     <string name="system_settings">System Settings</string>
+    <string name="wallpaper_app_name">jOS Wallpapers</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="wallpaper_description" translatable="false">DVD Live Wallpaper</string>
+    <string name="home_screen" translatable="false">Home Screen</string>
+    <string name="lock_screen" translatable="false">Lock Screen</string>
+    <string name="exit" translatable="false">auto exit app is not working please manually exit the app and go to wallpaper and style</string>
+    <string name="skip" translatable="false">skip</string>
+    <string name="gms">Google Play Settings (GMS(Google Play Services))</string>
+    <string name="launcher_settings">Launcher Settings</string>
+    <string name="kbd_settings">Keyboard Settings</string>
+    <string name="settings_fragment_name" translatable="false">com.j.jOS.SettingsActivity$LauncherSettingsFragment</string>
+    <string name="Info">Info</string>
 </resources>
