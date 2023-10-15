@@ -265,7 +265,7 @@ public class SettingsActivity extends FragmentActivity
                 case KEY_INFO:
                     preference.setOnPreferenceClickListener(p -> {
                         Intent intent = new Intent(Intent.ACTION_MAIN);
-                        intent.setComponent(new ComponentName("com.j.jOS", "com.j.jOS.info.InfoActivity"));
+                        intent.setComponent(new ComponentName(BuildConfig.APPLICATION_ID, "com.j.jOS.info.InfoActivity"));
                         startActivity(intent);
                         return true;
                     });

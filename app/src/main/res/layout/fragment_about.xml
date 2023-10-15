@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="version"
+            type="String" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?attr/actionBarSize">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineBottomIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.30" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/Info"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+                app:layout_constraintBottom_toTopOf="@id/guidelineTop"
+                app:layout_constraintEnd_toStartOf="@id/guidelineEndIcon"
+                app:layout_constraintStart_toEndOf="@id/guidelineStartIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewAppIcon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@mipmap/ic_app_foreground"
+                app:layout_constraintBottom_toTopOf="@id/guidelineBottomIcon"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEndIcon"
+                app:layout_constraintStart_toStartOf="@id/guidelineStartIcon"
+                app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewAppName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
+                app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
+                app:layout_constraintTop_toBottomOf="@id/guidelineBottomIcon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewAppVersion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_version"
+                android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
+                app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
+                app:layout_constraintTop_toBottomOf="@id/textViewAppName"
+                tools:text="@string/app_version" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewLineage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lineage OS build number not found"
+                android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
+                app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
+                app:layout_constraintTop_toBottomOf="@id/textViewAppVersion" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewjOS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="not using jOS Device"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
+                app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
+                app:layout_constraintTop_toBottomOf="@id/textViewLineage" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexBoxLinks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:flexWrap="wrap"
+                app:justifyContent="center"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStartChipGroup"
+                app:layout_constraintTop_toBottomOf="@id/textViewjOS">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/LinkChipButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/github"
+                    app:icon="@drawable/ic_github"
+                    app:iconTint="@color/slidePurple"
+                    app:openUrlOnClick="@{@string/url_github_repo}" />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStartChipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEndChipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStartIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEndIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.7" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flexBoxLinks">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/MyCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/textViewTopHeader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/cardview_padding_left"
+                                android:layout_marginTop="@dimen/cardview_padding_top"
+                                android:layout_marginEnd="@dimen/cardview_padding_right"
+                                android:paddingBottom="@dimen/cardview_header_bottom_padding"
+                                android:text="@string/jOS"
+                                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                                android:textColor="?attr/colorAccent"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/textViewTopHeader">
+
+                                <include
+                                    layout="@layout/list_item_about_item"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    bind:icon="@{@drawable/profile_pic_jf916}"
+                                    bind:subtitle="@{@string/about_team_jf916_role}"
+                                    bind:title="@{@string/about_team_jf916_name}"
+                                    bind:url="@{@string/about_team_jf916_url}" />
+
+                                <include
+                                    layout="@layout/list_item_about_item"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    bind:icon="@{@drawable/profile_pic_bh916}"
+                                    bind:subtitle="@{@string/about_team_bh916_role}"
+                                    bind:title="@{@string/about_team_bh916_name}"
+                                    bind:url="@{@string/about_team_bh916_url}" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

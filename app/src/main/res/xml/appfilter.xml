@@ -137,11 +137,11 @@
     <item component="ComponentInfo{com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.framework.core.LauncherActivity}" drawable="jic_gkb"/>
     <item component="ComponentInfo{com.nintendo.zaka/com.google.firebase.MessagingUnityPlayerActivity}" drawable="jic_mkt"/>
     <item component="ComponentInfo{com.reddit.frontpage/launcher.default}" drawable="jic_reddit"/>
-    <item component="ComponentInfo{app.lawnchair/app.lawnchair.LawnchairLauncher}" drawable="jic_launcher"/>
-    <item component="ComponentInfo{app.lawnchair.debug/app.lawnchair.LawnchairLauncher}" drawable="jic_launcher"/>
-    <item component="ComponentInfo{app.lawnchair.debug/leakcanary.internal.activity.LeakLauncherActivity}" drawable="jic_leak_canary"/>
-    <item component="ComponentInfo{com.j.jOSLauncher/app.lawnchair.LawnchairLauncher}" drawable="jic_launcher"/>
-    <item component="ComponentInfo{com.j.jOSLauncher.debug/app.lawnchair.LawnchairLauncher}" drawable="jic_launcher"/>
+    <item component="ComponentInfo{com.j.jOS/com.j.jOS.LawnchairLauncher}" drawable="jic_launcher"/>
+    <item component="ComponentInfo{com.j.jOS.debug/com.j.jOS.LawnchairLauncher}" drawable="jic_launcher"/>
+    <item component="ComponentInfo{com.j.jOS.debug/leakcanary.internal.activity.LeakLauncherActivity}" drawable="jic_leak_canary"/>
+    <item component="ComponentInfo{com.j.jOSLauncher/com.j.jOS.LawnchairLauncher}" drawable="jic_launcher"/>
+    <item component="ComponentInfo{com.j.jOSLauncher.debug/com.j.jOS.LawnchairLauncher}" drawable="jic_launcher"/>
     <item component="ComponentInfo{com.j.jOSLauncher.debug/leakcanary.internal.activity.LeakLauncherActivity}" drawable="jic_leak_canary"/>
     <item component="ComponentInfo{com.j.jOSLauncher/com.j.jOSLauncher.LawnchairLauncher}" drawable="jic_launcher"/>
     <item component="ComponentInfo{com.j.jOSLauncher.debug/com.j.jOSLauncher.LawnchairLauncher}" drawable="jic_launcher"/>

@@ -12,5 +12,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "jOSSystem"
+
+rootProject.name = "jOS"
 include ':app'
+include ':eggs:IceCreamSandwich'
+include ':eggs:KitKat'
+include ':eggs:Lollipop'
+include ':eggs:common'

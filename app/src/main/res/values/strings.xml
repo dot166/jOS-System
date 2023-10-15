@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">jOS System</string>
-    <string name="Settings_name">Settings</string>
+    <string name="settings_name">Settings</string>
     <string name="system_settings">System Settings</string>
     <string name="wallpaper_app_name">jOS Wallpapers</string>
     <string name="wallpaper">Wallpaper</string>
@@ -14,4 +14,14 @@
     <string name="kbd_settings">Keyboard Settings</string>
     <string name="settings_fragment_name" translatable="false">com.j.jOS.SettingsActivity$LauncherSettingsFragment</string>
     <string name="Info">Info</string>
+    <string name="jOS">jOS Team</string>
+    <string name="github" translatable="false">GitHub</string>
+    <string name="about_team_jf916_role" translatable="false">Lead Developer</string>
+    <string name="about_team_bh916_role" translatable="false">Developer</string>
+    <string name="about_team_jf916_name" translatable="false">._______166</string>
+    <string name="about_team_bh916_name" translatable="false">bh916</string>
+    <string name="about_team_jf916_url" translatable="false">https://github.com/jf916</string>
+    <string name="about_team_bh916_url" translatable="false">https://github.com/bh916</string>
+    <string name="url_github_repo" translatable="false">https://github.com/jf916/jOS-System</string>
+    <string name="error_no_app_to_open_url">No app can open this url!</string>
 </resources>

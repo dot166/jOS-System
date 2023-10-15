@@ -11,7 +11,7 @@ import lineageos.os.*;
 
 import com.j.jOS.R;
 
-public class InfoActivity extends AppCompatActivity {
+public class InfoActivity_old extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         final String LINEAGEOS = Build.LINEAGEOS_VERSION;
