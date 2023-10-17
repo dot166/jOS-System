@@ -22,25 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".info.InfoActivity_old" />
         <activity android:name=".info.InfoActivity" />
-        <activity
-            android:name="com.j.icons.MainActivity"
-            android:icon="@mipmap/ic_app"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.fede.launcher.THEME_ICONPACK" />
-                <action android:name="com.anddoes.launcher.THEME" />
-                <action android:name="com.novalauncher.THEME" />
-                <action android:name="com.teslacoilsw.launcher.THEME" />
-                <action android:name="com.gau.go.launcherex.theme" />
-                <action android:name="org.adw.launcher.THEMES" />
-                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
-                <action android:name="com.lineageos.trebuchet.THEME" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity android:name="com.j.Wallpapers.WallpaperActivity"
             android:exported="true"
             android:label="@string/wallpaper_app_name"
