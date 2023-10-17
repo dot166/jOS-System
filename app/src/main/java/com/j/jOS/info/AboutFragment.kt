@@ -39,6 +39,9 @@ class AboutFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
         }
 
+        val lineageos = Build.LINEAGEOS_VERSION
+        val substring = "beyond1lte"
+        val usingjOSdevice = lineageos.contains(substring)
         if (usingjOSdevice) {
             binding.textViewjOS.text = "jOS device"
         }
