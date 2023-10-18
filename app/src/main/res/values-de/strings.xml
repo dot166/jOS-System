@@ -1,7 +1,20 @@
 <resources>
+  <string name="app_name">jOS-System</string>
   <string name="settings_name">Einstellungen</string>
   <string name="system_settings">System Einstellungen</string>
   <string name="gms">Google Play-Einstellungen (GMS(Google Play-Dienste))</string>
   <string name="launcher_settings">Startprogramm Einstellungen</string>
   <string name="kbd_settings">Tastatur Einstellungen</string>
+  <string name="wallpaper_app_name">jOS-Hintergründe</string>
+  <string name="wallpaper">Hintergrund</string>
+  <string name="wallpaper_description">DVD-Live-Hintergrund</string>
+  <string name="home_screen">Startbildschirm</string>
+  <string name="lock_screen">Bildschirm sperren</string>
+  <string name="exit">Die App zum automatischen Beenden funktioniert nicht. Bitte beenden Sie die App manuell und gehen Sie zu Hintergrund und Stil</string>
+  <string name="skip">überspringen</string>
+  <string name="Info">Die Info</string>
+  <string name="jOS">jOS-Team</string>
+  <string name="about_team_jf916_role">Leitender Entwicklerr</string>
+  <string name="about_team_bh916_role">Entwickler</string>
+  <string name="error_no_app_to_open_url">Keine App kann diese URL öffnen!</string>
 </resources>
