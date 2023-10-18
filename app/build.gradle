@@ -37,8 +37,6 @@ android {
     }
     applicationVariants.all { variant ->
         resValue ("string", "app_version", "${appver}")
-        resValue ("string", "sdkversion", "${sdkversion}")
-        resValue ("string", "appid", "${appid}")
     }
     kotlinOptions {
         jvmTarget = '17'
