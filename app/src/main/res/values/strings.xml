@@ -4,11 +4,11 @@
     <string name="system_settings">System Settings</string>
     <string name="wallpaper_app_name">jOS Wallpapers</string>
     <string name="wallpaper">Wallpaper</string>
-    <string name="wallpaper_description" translatable="false">DVD Live Wallpaper</string>
-    <string name="home_screen" translatable="false">Home Screen</string>
-    <string name="lock_screen" translatable="false">Lock Screen</string>
-    <string name="exit" translatable="false">auto exit app is not working please manually exit the app and go to wallpaper and style</string>
-    <string name="skip" translatable="false">skip</string>
+    <string name="wallpaper_description">DVD Live Wallpaper</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="lock_screen">Lock Screen</string>
+    <string name="exit">auto exit app is not working please manually exit the app and go to wallpaper and style</string>
+    <string name="skip">skip</string>
     <string name="gms">Google Play Settings (GMS(Google Play Services))</string>
     <string name="launcher_settings">Launcher Settings</string>
     <string name="kbd_settings">Keyboard Settings</string>
@@ -16,8 +16,8 @@
     <string name="Info">Info</string>
     <string name="jOS">jOS Team</string>
     <string name="github" translatable="false">GitHub</string>
-    <string name="about_team_jf916_role" translatable="false">Lead Developer</string>
-    <string name="about_team_bh916_role" translatable="false">Developer</string>
+    <string name="about_team_jf916_role">Lead Developer</string>
+    <string name="about_team_bh916_role">Developer</string>
     <string name="about_team_jf916_name" translatable="false">._______166</string>
     <string name="about_team_bh916_name" translatable="false">bh916</string>
     <string name="about_team_jf916_url" translatable="false">https://github.com/jf916</string>
