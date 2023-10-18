@@ -1,3 +1,3 @@
 # jOS-System
 
-settings launcher, icon pack and wallpaper app
+settings launcher and wallpaper app
