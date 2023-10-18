@@ -80,7 +80,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['lineage-sdk.jar'])
     implementation "androidx.preference:preference-ktx:1.2.1"
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
-    implementation "com.airbnb.android:epoxy-databinding:4.6.2"
+    implementation "com.airbnb.android:epoxy-databinding:5.1.3"
     implementation 'com.louiscad.splitties:splitties-mainthread:3.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
 
