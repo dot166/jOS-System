@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.android_q.egg'
     compileSdkVersion = 34
     buildToolsVersion = '34.0.0'
 
