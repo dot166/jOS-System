@@ -21,6 +21,7 @@
             android:name=".paint.PaintActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
             android:exported="false"
+            android:icon="@drawable/p_icon"
             android:label="@string/p_app_name"
             android:theme="@style/PAppTheme" />
     </application>
