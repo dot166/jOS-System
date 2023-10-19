@@ -1,6 +1,6 @@
-package com.android_k.egg;
+package com.j.jOS.egg;
 
-import static com.android_k.egg.PlatLogoActivity.BGCOLOR;
+import static com.j.jOS.egg.PlatLogoActivity.BGCOLOR;
 
 import android.content.Context;
 import android.view.Gravity;
