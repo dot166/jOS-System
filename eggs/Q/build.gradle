@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion = Versions.COMPILE_SDK
-    buildToolsVersion = Versions.BUILD_TOOLS
+    compileSdkVersion = 34
+    buildToolsVersion = '34.0.0'
 
     defaultConfig {
-        minSdkVersion Versions.MIN_SDK
+        minSdkVersion 11
     }
 
 	sourceSets {
@@ -29,4 +29,5 @@ android {
 
 dependencies {
     implementation(libs.androidx.appcompat)
+    implementation(project(":eggs:common"))
 }
