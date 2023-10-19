@@ -48,6 +48,7 @@ Copyright (C) 2016 The Android Open Source Project
         <!-- Used to show over lock screen -->
         <activity
             android:name="com.android_n.egg.neko.NekoLockedActivity"
+            android:icon="@drawable/n_icon"
             android:excludeFromRecents="true"
             android:showOnLockScreen="true"
             android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar" />
@@ -55,6 +56,7 @@ Copyright (C) 2016 The Android Open Source Project
         <!-- Used to enable easter egg -->
         <activity
             android:name="com.android_n.egg.neko.NekoActivationActivity"
+            android:icon="@drawable/n_icon"
             android:excludeFromRecents="true"
             android:theme="@android:style/Theme.NoDisplay" />
 
