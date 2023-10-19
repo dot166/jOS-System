@@ -95,5 +95,5 @@ dependencies {
     implementation(project(":eggs:common"))
     implementation(project(":eggs:Q"))
     implementation(project(":eggs:Pie"))
-    implementation(project(":eggs:JellyBean"))
+    implementation(project(":eggs:Nougat"))
 }
