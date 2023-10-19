@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android_k.egg;
+package com.j.jOS.egg;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -36,8 +36,6 @@ import com.dede.basic.TransformationMethodUtils;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
-    //    int mCount;
-//    final Handler mHandler = new Handler();
     static final int BGCOLOR = 0xffed1d24;
 
     @Override
@@ -73,7 +71,6 @@ public class PlatLogoActivity extends Activity {
         letter.setTextSize(200);
         letter.setTextColor(0xFFFFFFFF);
         letter.setGravity(Gravity.CENTER);
-//        letter.setText(String.valueOf(Build.ID).substring(0, 1));
         letter.setText("jOS");
 
         final int p = (int) (4 * metrics.density);
@@ -85,7 +82,6 @@ public class PlatLogoActivity extends Activity {
         tv.setTextColor(0xFFFFFFFF);
         tv.setGravity(Gravity.CENTER);
         tv.setTransformationMethod(TransformationMethodUtils.createAllCapsTransformationMethod(this));
-//        tv.setText("Android " + Build.VERSION.RELEASE);
         tv.setText("jOS 13 (Android 13)");
         tv.setVisibility(View.INVISIBLE);
 
