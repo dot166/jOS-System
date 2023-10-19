@@ -30,6 +30,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.android_k.egg.R;
+// temp import desert cake for testing
+import com.android_k.egg.DesertCake;
 
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
