@@ -6,7 +6,7 @@
             android:name=".PlatLogoActivity"
             android:exported="true"
             android:icon="@drawable/k_platlogo"
-            android:label="@string/k_dessert_case"
+            android:label="@string/jOS_egg_name"
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
 
         <activity
