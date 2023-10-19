@@ -15,7 +15,7 @@
             android:name=".PlatLogoActivity"
             android:exported="true"
             android:label="@string/jOS_egg_name"
-            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" /
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
         <activity
             android:name=".SettingsActivity"
             android:exported="true"
