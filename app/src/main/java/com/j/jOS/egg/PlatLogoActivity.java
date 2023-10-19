@@ -30,7 +30,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android_k.egg.R;
+import com.j.jOS.R;
 // temp import dessert case for testing
 import com.android_k.egg.DessertCase;
 
