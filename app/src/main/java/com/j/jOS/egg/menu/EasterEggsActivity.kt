@@ -1,4 +1,4 @@
-package com.dede.android_eggs.main
+package com.j.jOS.egg.menu
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
