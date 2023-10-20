@@ -1,6 +1,6 @@
 @file:Suppress("NOTHING_TO_INLINE")
 
-package com.j.jOS.egg.util
+package com.j.jOS.egg.menu.util
 
 import android.annotation.SuppressLint
 import android.view.View
