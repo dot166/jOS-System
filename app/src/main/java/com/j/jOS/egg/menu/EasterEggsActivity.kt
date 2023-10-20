@@ -7,7 +7,7 @@ import com.j.jOS.R
 import com.j.jOS.databinding.ActivityEasterEggsBinding
 import com.j.jOS.egg.menu.util.EdgeUtils
 import com.j.jOS.egg.menu.util.ThemeUtils
-import com.j.jOS.egg.menu.views.main.StartupPage
+//import com.j.jOS.egg.menu.views.main.StartupPage
 
 /**
  * Easter Egg Collection
