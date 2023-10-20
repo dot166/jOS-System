@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JOSSystem">
         <activity
-            android:name=".PlatLogoActivity"
+            android:name=".egg.PlatLogoActivity"
             android:exported="true"
             android:label="@string/jOS_egg_name"
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
