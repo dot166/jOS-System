@@ -6,7 +6,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.j.jOS.R
 import com.j.jOS.databinding.ActivityEasterEggsBinding
 import com.j.jOS.egg.menu.util.EdgeUtils
-import com.j.jOS.egg.menu.util.ThemeUtils
+//import com.j.jOS.egg.menu.util.ThemeUtils
 //import com.j.jOS.egg.menu.views.main.StartupPage
 
 /**
@@ -17,7 +17,7 @@ class EasterEggsActivity : AppCompatActivity(R.layout.activity_easter_eggs) {
     private val binding: ActivityEasterEggsBinding by viewBinding(ActivityEasterEggsBinding::bind)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        ThemeUtils.tryApplyOLEDTheme(this)
+        //ThemeUtils.tryApplyOLEDTheme(this)
         EdgeUtils.applyEdge(window)
         super.onCreate(savedInstanceState)
 
