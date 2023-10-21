@@ -3,9 +3,6 @@
     <!-- Name of the K-release easter egg: a display case for all our tastiest desserts. [CHAR LIMIT=30] -->
     <string name="k_dessert_case">Dessert Case</string>
 
-    <!-- jOS egg name -->
-    <string name="jOS_egg_name">jOS Easter Egg</string>
-
     <!-- used by DessertCase -->
     <dimen name="k_dessert_case_cell_size">192dp</dimen>
 </resources>
