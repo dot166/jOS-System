@@ -24,4 +24,6 @@
     <string name="about_team_bh916_url" translatable="false">https://github.com/bh916</string>
     <string name="url_github_repo" translatable="false">https://github.com/jf916/jOS-System</string>
     <string name="error_no_app_to_open_url">No app can open this url!</string>
+    <!-- jOS egg name -->
+    <string name="jOS_egg_name">jOS Easter Egg</string>
 </resources>
