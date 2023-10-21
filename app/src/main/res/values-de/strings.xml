@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">jOS</string>
+  <string name="app_name">jOS-System</string>
   <string name="settings_name">Einstellungen</string>
   <string name="system_settings">System Einstellungen</string>
   <string name="gms">Google Play-Einstellungen (GMS(Google Play-Dienste))</string>
