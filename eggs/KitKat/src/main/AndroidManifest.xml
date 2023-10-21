@@ -2,14 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>
-        <activity
-            android:name=".PlatLogoActivity"
-            android:exported="true"
-            android:icon="@drawable/k_platlogo"
-            android:label="@string/k_dessert_case"
-            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
-
-        <activity
+       <activity
             android:name=".DessertCase"
             android:excludeFromRecents="true"
             android:exported="true"

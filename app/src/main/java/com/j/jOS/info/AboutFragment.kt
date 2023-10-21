@@ -10,8 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import com.android_k.egg.DessertCase
-import com.android_k.egg.PlatLogoActivity
+import com.j.jOS.egg.PlatLogoActivity
 import com.dede.basic.getLong
 import com.dede.basic.putLong
 import com.j.jOS.databinding.FragmentAboutBinding

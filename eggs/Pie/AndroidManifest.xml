@@ -13,14 +13,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android_p.egg">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>
         <activity
             android:name=".paint.PaintActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
             android:exported="false"
+            android:icon="@drawable/p_icon"
             android:label="@string/p_app_name"
             android:theme="@style/PAppTheme" />
     </application>
