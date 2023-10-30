@@ -19,4 +19,5 @@
 <resources>
     <!-- Name of the L Land easter egg. DO NOT TRANSLATE -->
     <string name="l_lland">L Land</string>
+    <string name="l_egg">Android Lollipop (5.0)</string>
 </resources>

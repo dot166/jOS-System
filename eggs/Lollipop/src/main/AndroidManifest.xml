@@ -6,7 +6,7 @@
         <activity
             android:name=".LLandActivity"
             android:excludeFromRecents="true"
-            android:exported="true"
+            android:exported="false"
             android:hardwareAccelerated="true"
             android:icon="@drawable/l_icon"
             android:label="@string/l_lland"

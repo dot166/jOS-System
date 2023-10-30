@@ -19,4 +19,5 @@
   <string name="error_no_app_to_open_url">Keine App kann diese URL öffnen!</string>
     <!-- jOS-Ei-Name -->
     <string name="jOS_egg_name">jOS-Osterei</string>
+  <string name="jOS_scr">jOS-Bildschirmschoner</string>
 </resources>

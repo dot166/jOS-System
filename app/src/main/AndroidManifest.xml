@@ -7,10 +7,15 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:label="@string/app_name"
         android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.JOSSystem">
+        <activity
+            android:name=".egg.menu.MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/alt.Theme.JOSSystem" />
         <activity
             android:name=".egg.PlatLogoActivity"
             android:exported="true"
@@ -19,23 +24,26 @@
         <activity
             android:name=".SettingsActivity"
             android:exported="true"
-            android:label="@string/settings_name"
-            android:icon="@mipmap/ic_launcher">
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/settings_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".info.InfoActivity" />
-        <activity android:name="com.j.Wallpapers.WallpaperActivity"
+        <activity android:name=".info.InfoActivity"
+            android:theme="@style/alt.Theme.JOSSystem" />
+        <activity
+            android:name="com.j.Wallpapers.WallpaperActivity"
             android:exported="true"
-            android:label="@string/wallpaper_app_name"
             android:icon="@mipmap/ic_app"
+            android:label="@string/wallpaper_app_name"
             android:theme="@style/Theme.Wallpapers">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SET_WALLPAPER" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -43,13 +51,17 @@
         <service
             android:name="com.j.Wallpapers.MyWallpaperService"
             android:enabled="true"
+            android:exported="true"
             android:label="DVD Live Wallpaper"
-            android:permission="android.permission.BIND_WALLPAPER"
-            android:exported="true">
+            android:permission="android.permission.BIND_WALLPAPER">
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService" />
             </intent-filter>
-            <meta-data android:name="android.service.wallpaper" android:resource="@xml/mywallpaper" />
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/mywallpaper" />
         </service>
     </application>
+
 </manifest>

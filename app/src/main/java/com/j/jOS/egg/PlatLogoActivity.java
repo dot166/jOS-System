@@ -31,8 +31,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.android_k.egg.R;
-// temp import dessert case for testing
-import com.android_k.egg.DessertCase;
+import com.j.jOS.egg.menu.MenuActivity;
 
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
@@ -157,7 +156,7 @@ public class PlatLogoActivity extends Activity {
                 }
                 try {
                     //TODO: implement egg menu
-                    startActivity(new Intent(PlatLogoActivity.this, DessertCase.class)
+                    startActivity(new Intent(PlatLogoActivity.this, MenuActivity.class)
                             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_TASK
                                     | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS));

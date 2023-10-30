@@ -16,4 +16,5 @@ Copyright (C) 2018 The Android Open Source Project
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- name of the Q easter egg, a nonogram-style icon puzzle -->
     <string name="q_egg_name" translatable="false">Icon Quiz</string>
+    <string name="q_egg" translatable="false">Android Q (Quince Tart) (10)</string>
 </resources>
