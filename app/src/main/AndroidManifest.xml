@@ -32,8 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".info.InfoActivity"
-            android:theme="@style/alt.Theme.JOSSystem" />
+        <activity android:name=".info.InfoActivity" />
         <activity
             android:name="com.j.Wallpapers.WallpaperActivity"
             android:exported="true"

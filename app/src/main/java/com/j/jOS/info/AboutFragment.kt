@@ -13,12 +13,10 @@ import androidx.fragment.app.Fragment
 import com.j.jOS.egg.PlatLogoActivity
 import com.dede.basic.getLong
 import com.dede.basic.putLong
-import com.j.jOS.databinding.FragmentAboutBinding
 import lineageos.os.Build
 
 /**
  * Created by sds100 on 05/04/2020.
- */
 
 class AboutFragment : Fragment() {
 
@@ -78,3 +76,4 @@ class AboutFragment : Fragment() {
         super.onDestroyView()
     }
 }
+*/
