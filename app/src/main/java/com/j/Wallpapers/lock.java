@@ -1,5 +1,6 @@
 package com.j.Wallpapers;
 
+import android.app.Activity;
 import android.app.WallpaperManager;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
@@ -26,15 +27,18 @@ import com.j.jOS.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.j.jOS.databinding.FragmentListwallpapersBinding;
+import com.j.jOS.databinding.FragmentLockBinding;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class lock extends Fragment implements WallpaperSelectListener {
+public class lock extends Activity implements WallpaperSelectListener {
     private RecyclerView wallpaperRecyclerView;
     private WallpaperGalleryRecyclerAdapter wallpaperGalleryRecyclerAdapter;
     private List<Wallpaper> wallpapers;
+    private FragmentLockBinding binding;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,18 +50,14 @@ public class lock extends Fragment implements WallpaperSelectListener {
 
         wallpaperGalleryRecyclerAdapter = new WallpaperGalleryRecyclerAdapter(this);
         wallpaperGalleryRecyclerAdapter.setWallpapers(wallpapers);
-    }
+        binding = FragmentLockBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_lock, container, false);
-
-        wallpaperRecyclerView = view.findViewById(R.id.fragment_listwallpapers_recyclerView);
-        wallpaperRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        wallpaperRecyclerView = binding.fragmentListwallpapersRecyclerView;
+        wallpaperRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         wallpaperRecyclerView.setAdapter(wallpaperGalleryRecyclerAdapter);
 
-        view.findViewById(R.id.skip_lock).setOnClickListener(new View.OnClickListener() {
+        binding.skipLock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -66,58 +66,17 @@ public class lock extends Fragment implements WallpaperSelectListener {
                     startActivity(intent);
                 } catch (ActivityNotFoundException e) {
                     // Define what your app should do if no activity can handle the intent.
-                    NavHostFragment.findNavController(lock.this)
-                            .navigate(R.id.action_lock_to_exit_now);
+                    Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_SHORT).show();
                 }
 
             }
         });
-
-        return view;
-    }
-
-    private void setHomeScreenWallpaper(Bitmap bitmap) {
-        try {
-            WallpaperManager.getInstance(getContext()).setBitmap(bitmap);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void setCroppedHomeScreenWallpaper(Bitmap bitmap) {
-        try {
-            WallpaperManager wallpaperManager = WallpaperManager.getInstance(getContext());
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                int wallpaperHeight = Resources.getSystem().getDisplayMetrics().heightPixels;
-                int wallpaperWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
-
-                Point start = new Point(0, 0);
-                Point end = new Point(bitmap.getWidth(), bitmap.getHeight());
-
-                if (bitmap.getWidth() > wallpaperWidth) {
-                    start.x = (bitmap.getWidth() - wallpaperWidth) / 2;
-                    end.x = start.x + wallpaperWidth;
-                }
-
-                if (bitmap.getHeight() > wallpaperHeight) {
-                    start.y = (bitmap.getHeight() - wallpaperHeight) / 2;
-                    end.y = start.y + wallpaperHeight;
-                }
-
-                wallpaperManager.setBitmap(bitmap, new Rect(start.x, start.y, end.x, end.y), false);
-            } else {
-                wallpaperManager.setBitmap(bitmap);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     private void setLockScreenWallpaper(Bitmap bitmap) {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                WallpaperManager.getInstance(getContext()).setBitmap(bitmap, null, true, WallpaperManager.FLAG_LOCK);
+                WallpaperManager.getInstance(getApplicationContext()).setBitmap(bitmap, null, true, WallpaperManager.FLAG_LOCK);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -127,22 +86,21 @@ public class lock extends Fragment implements WallpaperSelectListener {
     @Override
     public void onWallpaperSelect(Wallpaper wallpaper) {
 
-        Glide.with(getContext())
+        Glide.with(getApplicationContext())
                 .asBitmap()
                 .load(wallpaper.getImageUri())
                 .into(new SimpleTarget<Bitmap>() {
                     @Override
                     public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
                         setLockScreenWallpaper(resource);
-                        Toast.makeText(getContext(), wallpaper.getTitle() + " has been selected as the lock screen wallpaper", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), wallpaper.getTitle() + " has been selected as the lock screen wallpaper", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(Intent.ACTION_MAIN);
                         intent.setComponent(new ComponentName("com.android.wallpaper", "com.android.wallpaper.picker.CategoryPickerActivity"));
                         try {
                             startActivity(intent);
                         } catch (ActivityNotFoundException e) {
                             // Define what your app should do if no activity can handle the intent.
-                            NavHostFragment.findNavController(lock.this)
-                                    .navigate(R.id.action_lock_to_exit_now);
+                            Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

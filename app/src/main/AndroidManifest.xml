@@ -3,6 +3,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,8 +16,7 @@
         <activity
             android:name=".egg.menu.MenuActivity"
             android:exported="false"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/alt.Theme.JOSSystem" />
+            android:label="@string/jOS_egg_name" />
         <activity
             android:name=".egg.PlatLogoActivity"
             android:exported="true"
@@ -34,11 +35,22 @@
         </activity>
         <activity android:name=".info.InfoActivity" />
         <activity
-            android:name="com.j.Wallpapers.WallpaperActivity"
+            android:name="com.j.Wallpapers.WallpapersListFragment"
             android:exported="true"
             android:icon="@mipmap/ic_app"
-            android:label="@string/wallpaper_app_name"
-            android:theme="@style/Theme.Wallpapers">
+            android:label="@string/home_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.j.Wallpapers.lock"
+            android:exported="false"
+            android:icon="@mipmap/ic_app"
+            android:label="@string/lock_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SET_WALLPAPER" />

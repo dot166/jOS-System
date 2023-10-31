@@ -22,8 +22,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="?attr/actionBarSize">
+            android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineTop"
@@ -39,7 +38,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.30" />
 
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -50,7 +49,7 @@
                 app:layout_constraintStart_toEndOf="@id/guidelineStartIcon"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.appcompat.widget.AppCompatImageView
+            <ImageView
                 android:id="@+id/imageViewAppIcon"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -60,7 +59,7 @@
                 app:layout_constraintStart_toStartOf="@id/guidelineStartIcon"
                 app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
 
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:id="@+id/textViewAppName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -72,7 +71,7 @@
                 app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
                 app:layout_constraintTop_toBottomOf="@id/guidelineBottomIcon" />
 
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:id="@+id/textViewAppVersion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -84,7 +83,7 @@
                 app:layout_constraintTop_toBottomOf="@id/textViewAppName"
                 tools:text="@string/app_version" />
 
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:id="@+id/textViewLineage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -96,7 +95,7 @@
                 app:layout_constraintTop_toBottomOf="@id/textViewAppVersion" />
 
 
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:id="@+id/textViewjOS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -119,8 +118,7 @@
                 app:layout_constraintStart_toStartOf="@+id/guidelineStartChipGroup"
                 app:layout_constraintTop_toBottomOf="@id/textViewjOS">
 
-                <com.google.android.material.button.MaterialButton
-                    style="@style/LinkChipButton"
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/github"
@@ -171,8 +169,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <com.google.android.material.card.MaterialCardView
-                        style="@style/MyCardView"
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -194,8 +191,8 @@
                                 android:layout_marginEnd="@dimen/cardview_padding_right"
                                 android:paddingBottom="@dimen/cardview_header_bottom_padding"
                                 android:text="@string/jOS"
-                                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
-                                android:textColor="?attr/colorAccent"
+                                android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                                android:textColor="#FFFFFF"
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -227,7 +224,7 @@
                                     bind:url="@{@string/about_team_bh916_url}" />
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
-                    </com.google.android.material.card.MaterialCardView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </androidx.core.widget.NestedScrollView>
         </androidx.constraintlayout.widget.ConstraintLayout>

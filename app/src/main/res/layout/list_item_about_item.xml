@@ -25,7 +25,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
+        android:background="#333333"
         android:padding="8dp"
         app:openUrlOnClick="@{url}">
 
@@ -46,8 +46,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@{title}"
-                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
-                android:textColor="?attr/colorOnSurface"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                android:textColor="#FFFFFF"
                 tools:text="My name" />
 
             <TextView
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@{subtitle}"
-                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
                 tools:text="Developer"
                 tools:visibility="visible" />
         </LinearLayout>

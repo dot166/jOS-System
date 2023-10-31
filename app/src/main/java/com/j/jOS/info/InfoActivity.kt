@@ -1,25 +1,18 @@
 package com.j.jOS.info
 
 import android.app.Activity
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import lineageos.os.Build
-import android.content.ActivityNotFoundException
-import android.content.ContentValues
-import android.content.Intent
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
-import com.j.jOS.egg.PlatLogoActivity
 import com.dede.basic.getLong
 import com.dede.basic.putLong
 import com.j.jOS.databinding.ActivityAboutBinding
-import com.j.jOS.databinding.ActivityMenuBinding
+import com.j.jOS.egg.PlatLogoActivity
+import lineageos.os.Build
 
-class InfoActivity : FragmentActivity() {
+class InfoActivity : Activity() {
 
     /**
      * Scoped to the lifecycle of the fragment's view (between onCreateView and onDestroyView)
