@@ -7,6 +7,7 @@
   <string name="kbd_settings">Tastatur Einstellungen</string>
   <string name="wallpaper">Hintergrund</string>
   <string name="wallpaper_description">DVD-Live-Hintergrund</string>
+  <string name="wallpaper_app_name">jOS-Hintergründe</string>
   <string name="home_screen">jOS-Hintergründe-Startbildschirm</string>
   <string name="lock_screen">jOS-Hintergründe-Bildschirm sperren</string>
   <string name="exit">Die App zum automatischen Beenden funktioniert nicht. Bitte beenden Sie die App manuell und gehen Sie zu Hintergrund und Stil</string>
