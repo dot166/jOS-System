@@ -19,7 +19,7 @@
             android:label="@string/jOS_egg_name" />
         <activity
             android:name=".egg.PlatLogoActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/jOS_egg_name"
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
         <activity
@@ -35,10 +35,9 @@
         </activity>
         <activity android:name=".info.InfoActivity" />
         <activity
-            android:name="com.j.Wallpapers.WallpapersListFragment"
+            android:name="com.j.Wallpapers.WallpaperActivity"
             android:exported="true"
-            android:icon="@mipmap/ic_app"
-            android:label="@string/home_screen">
+            android:label="@string/wallpaper_app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SET_WALLPAPER" />
@@ -47,17 +46,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.j.Wallpapers.WallpapersListFragment"
+            android:exported="false"
+            android:label="@string/home_screen" />
+        <activity
             android:name="com.j.Wallpapers.lock"
             android:exported="false"
-            android:icon="@mipmap/ic_app"
-            android:label="@string/lock_screen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.SET_WALLPAPER" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+            android:label="@string/lock_screen" />
 
         <service
             android:name="com.j.Wallpapers.MyWallpaperService"

@@ -25,29 +25,11 @@
             android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineTop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.1" />
-
-            <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineBottomIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.30" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:text="@string/Info"
-                android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
-                app:layout_constraintBottom_toTopOf="@id/guidelineTop"
-                app:layout_constraintEnd_toStartOf="@id/guidelineEndIcon"
-                app:layout_constraintStart_toEndOf="@id/guidelineStartIcon"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintGuide_percent="0.20" />
 
             <ImageView
                 android:id="@+id/imageViewAppIcon"
@@ -57,7 +39,7 @@
                 app:layout_constraintBottom_toTopOf="@id/guidelineBottomIcon"
                 app:layout_constraintEnd_toEndOf="@id/guidelineEndIcon"
                 app:layout_constraintStart_toStartOf="@id/guidelineStartIcon"
-                app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textViewAppName"
@@ -122,8 +104,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/github"
-                    app:icon="@drawable/ic_github"
-                    app:iconTint="@color/slidePurple"
                     app:openUrlOnClick="@{@string/url_github_repo}" />
 
             </com.google.android.flexbox.FlexboxLayout>

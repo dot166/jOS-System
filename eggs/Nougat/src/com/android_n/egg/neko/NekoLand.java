@@ -139,7 +139,6 @@ public class NekoLand extends Activity implements PrefsListener {
     private void showNameDialog(final Cat cat) {
         final Context context = new ContextThemeWrapper(this,
                 android.R.style.Theme_Material_Light_Dialog_NoActionBar);
-        // TODO: Move to XML, add correct margins.
         View view = LayoutInflater.from(context).inflate(R.layout.n_edit_text, null);
         final EditText text = (EditText) view.findViewById(android.R.id.edit);
         text.setText(cat.getName());

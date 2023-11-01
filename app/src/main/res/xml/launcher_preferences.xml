@@ -37,6 +37,11 @@
         android:title="@string/kbd_settings" />
 
     <Preference
+        android:key="pref_wall"
+        android:icon="@drawable/jic_wall"
+        android:title="@string/change_wallpaper" />
+
+    <Preference
         android:key="pref_info"
         android:icon="@android:drawable/ic_dialog_info"
         android:title="@string/Info" />

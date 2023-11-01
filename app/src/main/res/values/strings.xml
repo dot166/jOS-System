@@ -4,6 +4,7 @@
     <string name="system_settings">System Settings</string>
     <string name="wallpaper_app_name">jOS Wallpapers</string>
     <string name="wallpaper">Wallpaper</string>
+    <string name="change_wallpaper">Change Wallpaper</string>
     <string name="wallpaper_description">DVD Live Wallpaper</string>
     <string name="home_screen">jOS Wallpapers-Home Screen</string>
     <string name="lock_screen">jOS Wallpapers-Lock Screen</string>
@@ -26,4 +27,5 @@
     <string name="error_no_app_to_open_url">No app can open this url!</string>
     <!-- jOS egg name -->
     <string name="jOS_egg_name">jOS Easter Egg</string>
+    <string name="again">Push The Back Button Again</string>
 </resources>

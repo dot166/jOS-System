@@ -23,6 +23,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.j.jOS.BuildConfig;
 import com.j.jOS.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.SimpleTarget;
@@ -60,6 +61,7 @@ public class lock extends Activity implements WallpaperSelectListener {
         binding.skipLock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                next();
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setComponent(new ComponentName("com.android.wallpaper", "com.android.wallpaper.picker.CategoryPickerActivity"));
                 try {
@@ -104,5 +106,10 @@ public class lock extends Activity implements WallpaperSelectListener {
                         }
                     }
                 });
+    }
+    public void next() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setComponent(new ComponentName(BuildConfig.APPLICATION_ID, "com.j.Wallpapers.lync"));
+        startActivity(intent);
     }
 }

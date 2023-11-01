@@ -41,6 +41,7 @@ public class SettingsActivity extends FragmentActivity
     public static final String KEY_GMS = "pref_gms";
     public static final String KEY_LAUNCHER3 = "pref_launcher3";
     public static final String KEY_KBD = "pref_latinime";
+    public static final String KEY_WALL = "pref_wall";
     public static final String KEY_INFO = "pref_info";
 
     @Override
@@ -258,6 +259,14 @@ public class SettingsActivity extends FragmentActivity
                     preference.setOnPreferenceClickListener(p -> {
                         Intent intent = new Intent(Intent.ACTION_MAIN);
                         intent.setComponent(new ComponentName("com.android.inputmethod.latin", "com.android.inputmethod.latin.setup.SetupWizardActivity"));
+                        startActivity(intent);
+                        return true;
+                    });
+                    return true;
+                case KEY_WALL:
+                    preference.setOnPreferenceClickListener(p -> {
+                        Intent intent = new Intent(Intent.ACTION_MAIN);
+                        intent.setComponent(new ComponentName(BuildConfig.APPLICATION_ID, "com.j.Wallpapers.WallpaperActivity"));
                         startActivity(intent);
                         return true;
                     });

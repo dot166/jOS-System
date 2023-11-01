@@ -155,7 +155,6 @@ public class PlatLogoActivity extends Activity {
                             System.currentTimeMillis());
                 }
                 try {
-                    //TODO: implement egg menu
                     startActivity(new Intent(PlatLogoActivity.this, MenuActivity.class)
                             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_TASK
