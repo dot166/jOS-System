@@ -2,6 +2,7 @@
     <string name="app_name">jOS System</string>
     <string name="settings_name">Settings</string>
     <string name="system_settings">System Settings</string>
+    <string name="wallpaper_app_name">jOS Wallpapers</string>
     <string name="wallpaper">Wallpaper</string>
     <string name="wallpaper_description">DVD Live Wallpaper</string>
     <string name="home_screen">jOS Wallpapers-Home Screen</string>
