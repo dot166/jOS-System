@@ -1,0 +1,39 @@
+android_app {
+    name: "jOS System",
+
+    resource_dirs: ["src/main/res"],
+
+    srcs: [
+        "src/main/java/**/*.kt",
+        "src/main/java/**/*.java",
+        "src_aosp/**/*.java",
+    ],
+
+    manifest: "src/main/AndroidManifest.xml",
+
+    product_specific: true,
+
+    static_libs: [
+        // DO NOT EDIT THIS SECTION MANUALLY
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.cardview_cardview",
+        "androidx.preference_preference-ktx",
+        "jOS_com.github.bumptech.glide_glide",
+        "com.google.android.material_material",
+        "com.google.android.flexbox_flexbox",
+        "jOS_com.louiscad.splitties_splitties-mainthread",
+        "androidx.databinding_viewbinding",
+        "androidx.databinding_databinding-common",
+        "androidx.databinding_databinding-runtime",
+        "androidx.databinding_databinding-adapters",
+        "androidx.databinding_databinding-ktx",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard-rules.pro"],
+    },
+
+    sdk_version: "current",
+
+    kotlincflags: ["-Xjvm-default=enable"],
+}

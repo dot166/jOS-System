@@ -7,7 +7,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import com.android_k.egg.R;
+
+import com.j.jOS.R;
 
 
 public class PlatLogoSnapshotProvider extends com.dede.basic.PlatLogoSnapshotProvider {

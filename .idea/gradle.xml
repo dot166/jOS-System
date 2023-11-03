@@ -12,14 +12,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/eggs" />
-            <option value="$PROJECT_DIR$/eggs/IceCreamSandwich" />
-            <option value="$PROJECT_DIR$/eggs/KitKat" />
-            <option value="$PROJECT_DIR$/eggs/Lollipop" />
-            <option value="$PROJECT_DIR$/eggs/Nougat" />
-            <option value="$PROJECT_DIR$/eggs/Pie" />
-            <option value="$PROJECT_DIR$/eggs/Q" />
-            <option value="$PROJECT_DIR$/eggs/common" />
           </set>
         </option>
       </GradleProjectSettings>

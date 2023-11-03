@@ -6,11 +6,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.dede.basic.getLong
-import com.dede.basic.putLong
 import com.j.jOS.databinding.ActivityAboutBinding
 import com.j.jOS.egg.PlatLogoActivity
-import lineageos.os.Build
+//import lineageos.os.Build
 
 class InfoActivity : Activity() {
 
@@ -26,22 +24,16 @@ class InfoActivity : Activity() {
         _binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val lineageos = Build.LINEAGEOS_VERSION
-        val substring = "beyond1lte"
-        val usingjOSdevice = lineageos.contains(substring)
-        if (usingjOSdevice) {
-            binding.textViewjOS.text = "jOS device"
-        }
-        binding.textViewLineage.text = lineageos
+        //val lineageos = Build.LINEAGEOS_VERSION
+        //val substring = "beyond1lte"
+        //val usingjOSdevice = lineageos.contains(substring)
+        //if (usingjOSdevice) {
+            //binding.textViewjOS.text = "jOS device"
+        //}
+        //binding.textViewLineage.text = lineageos
 
         val imageViewAppIcon = binding.imageViewAppIcon
         imageViewAppIcon.setOnLongClickListener(View.OnLongClickListener { v ->
-            if (v.context.getLong("k_egg_mode", 0)
-                == 0L
-            ) {
-                // For posterity: the moment this user unlocked the easter egg
-                v.context.putLong("k_egg_mode", System.currentTimeMillis())
-            }
             try {
                 startActivity(
                     Intent(applicationContext, PlatLogoActivity::class.java)

@@ -15,10 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "jOS"
 include ':app'
-include ':eggs:IceCreamSandwich'
-include ':eggs:KitKat'
-include ':eggs:Lollipop'
-include ':eggs:common'
-include ':eggs:Q'
-include ':eggs:Pie'
-include ':eggs:Nougat'

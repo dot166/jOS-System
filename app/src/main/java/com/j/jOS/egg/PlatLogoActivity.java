@@ -20,7 +20,11 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.icu.text.SimpleDateFormat;
+import android.icu.util.Calendar;
 import android.os.Bundle;
+import android.os.Build;
+import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
@@ -30,11 +34,14 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android_k.egg.R;
+import com.j.jOS.R;
 import com.j.jOS.egg.menu.MenuActivity;
 
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
+
+import java.util.Date;
+import java.util.Locale;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
@@ -76,6 +83,12 @@ public class PlatLogoActivity extends Activity {
         letter.setText("jOS");
 
         final int p = (int) (4 * metrics.density);
+        Date c = Calendar.getInstance().getTime();
+        System.out.println("Current time => " + c);
+        SimpleDateFormat yf = new SimpleDateFormat("yyyy", Locale.getDefault());
+        String formattedYear = yf.format(c);
+        int ver = Integer.parseInt(formattedYear) - 2010;
+        String jos_ver = "jOS" + ver + "(Android " + Build.VERSION.RELEASE_OR_PREVIEW_DISPLAY+ ")";
 
         final TextView tv = new TextView(this);
         if (light != null) tv.setTypeface(light);
@@ -84,7 +97,7 @@ public class PlatLogoActivity extends Activity {
         tv.setTextColor(0xFFFFFFFF);
         tv.setGravity(Gravity.CENTER);
         tv.setTransformationMethod(TransformationMethodUtils.createAllCapsTransformationMethod(this));
-        tv.setText("jOS 13 (Android 13)");
+        tv.setText(jos_ver);
         tv.setVisibility(View.INVISIBLE);
 
         mContent.addView(bg);

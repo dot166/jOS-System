@@ -1,14 +1,12 @@
 package com.j.jOS.egg.menu
 
 import android.app.Activity
+import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
 import com.android_i.egg.Nyandroid
 import com.android_k.egg.DessertCase
 import com.android_l.egg.LLandActivity
-import com.android_n.egg.NPlatLogoActivity
-import com.android_p.egg.paint.PaintActivity
-import com.android_q.egg.quares.QuaresActivity
 import com.j.jOS.databinding.ActivityMenuBinding
 
 class MenuActivity : Activity() {
@@ -54,37 +52,18 @@ class MenuActivity : Activity() {
             )
         }
 
-        binding.n.setOnClickListener { view ->
-            startActivity(
-                Intent(this@MenuActivity, NPlatLogoActivity::class.java)
-                    .setFlags(
-                        Intent.FLAG_ACTIVITY_NEW_TASK
-                                or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
-                    )
-            )
-        }
-
         binding.p.setOnClickListener { view ->
-            startActivity(
-                Intent(this@MenuActivity, PaintActivity::class.java)
-                    .setFlags(
-                        Intent.FLAG_ACTIVITY_NEW_TASK
-                                or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
-                    )
-            )
+            val intent = Intent(Intent.ACTION_MAIN)
+            intent.component =
+                ComponentName("com.android.egg", "com.android.egg.paint.PaintActivity")
+            startActivity(intent)
         }
 
         binding.q.setOnClickListener { view ->
-            startActivity(
-                Intent(this@MenuActivity, QuaresActivity::class.java)
-                    .setFlags(
-                        Intent.FLAG_ACTIVITY_NEW_TASK
-                                or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
-                    )
-            )
+            val intent = Intent(Intent.ACTION_MAIN)
+            intent.component =
+                ComponentName("com.android.egg", "com.android.egg.quares.QuaresActivity")
+            startActivity(intent)
         }
     }
 }

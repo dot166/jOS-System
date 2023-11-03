@@ -19,7 +19,7 @@
             android:label="@string/jOS_egg_name" />
         <activity
             android:name=".egg.PlatLogoActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/jOS_egg_name"
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
         <activity
@@ -53,6 +53,53 @@
             android:name="com.j.Wallpapers.lock"
             android:exported="false"
             android:label="@string/lock_screen" />
+
+        <!-- started from ... somewhere -->
+        <activity
+            android:name="com.android_i.egg.Nyandroid"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/i_platlogo"
+            android:label="@string/i_egg_name"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+        <activity
+            android:name="com.android_l.egg.LLandActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/l_icon"
+            android:label="@string/l_lland"
+            android:launchMode="singleInstance"
+            android:screenOrientation="locked"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+
+        <activity
+            android:name="com.android_k.egg.DessertCase"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/k_platlogo"
+            android:label="@string/k_dessert_case"
+            android:launchMode="singleInstance"
+            android:screenOrientation="locked"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+        <!-- a gallery of delicious treats -->
+        <service
+            android:name="com.android_k.egg.DessertCaseDream"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/k_platlogo"
+            android:label="@string/k_dessert_case"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
 
         <service
             android:name="com.j.Wallpapers.MyWallpaperService"
