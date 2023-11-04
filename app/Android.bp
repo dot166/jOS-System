@@ -1,5 +1,5 @@
 android_app {
-    name: "jOS System",
+    name: "jOS-System",
 
     resource_dirs: ["src/main/res"],
 
