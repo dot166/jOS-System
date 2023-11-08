@@ -17,6 +17,7 @@ android_app {
         // DO NOT EDIT THIS SECTION MANUALLY
         "androidx-constraintlayout_constraintlayout",
         "androidx.cardview_cardview",
+        "androidx.recyclerview_recyclerview",
         "androidx.preference_preference-ktx",
         "jOS_com.github.bumptech.glide_glide",
         "com.google.android.material_material",

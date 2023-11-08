@@ -16,6 +16,8 @@
 
 package com.j.jOS.egg;
 
+import static com.j.jOS.Version.os_ver;
+
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -83,12 +85,7 @@ public class PlatLogoActivity extends Activity {
         letter.setText("jOS");
 
         final int p = (int) (4 * metrics.density);
-        Date c = Calendar.getInstance().getTime();
-        System.out.println("Current time => " + c);
-        SimpleDateFormat yf = new SimpleDateFormat("yyyy", Locale.getDefault());
-        String formattedYear = yf.format(c);
-        int ver = Integer.parseInt(formattedYear) - 2010;
-        String jos_ver = "jOS" + ver + "(Android " + Build.VERSION.RELEASE_OR_PREVIEW_DISPLAY+ ")";
+        String jos_ver = "jOS " + os_ver + " (M)";
 
         final TextView tv = new TextView(this);
         if (light != null) tv.setTypeface(light);

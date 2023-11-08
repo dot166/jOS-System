@@ -6,7 +6,7 @@ plugins {
 
 final int sdkversion = 33
 final def appid = "com.j.jOS"
-final def appver = "app=13 wall=2.0"
+final def appver = "13.5"
 
 android {
     namespace appid
@@ -35,9 +35,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    applicationVariants.all { variant ->
-        resValue ("string", "app_version", "${appver}")
-    }
     kotlinOptions {
         jvmTarget = '17'
     }
@@ -54,14 +51,13 @@ android {
 dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
     implementation "androidx.preference:preference-ktx:1.2.1"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.20"
     // glide dependencies
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     implementation 'com.google.android.material:material:1.10.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
-    // remove when built into lineage
-    //implementation fileTree(dir: 'libs', include: ['lineage-sdk.jar'])
     // remove when built into lineage
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
     // remove when built into lineage

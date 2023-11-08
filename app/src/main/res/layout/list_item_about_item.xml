@@ -60,7 +60,7 @@
                 tools:visibility="visible" />
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <ImageView
             android:id="@+id/imageView"
             android:layout_width="40dp"
             android:layout_height="40dp"

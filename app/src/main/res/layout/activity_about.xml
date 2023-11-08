@@ -58,36 +58,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/app_version"
                 android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
                 app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
                 app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
-                app:layout_constraintTop_toBottomOf="@id/textViewAppName"
-                tools:text="@string/app_version" />
-
-            <TextView
-                android:id="@+id/textViewLineage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Lineage OS build number not found"
-                android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
-                app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
-                app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
-                app:layout_constraintTop_toBottomOf="@id/textViewAppVersion" />
-
-
-            <TextView
-                android:id="@+id/textViewjOS"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:gravity="center"
-                android:text="not using jOS Device"
-                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
-                app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
-                app:layout_constraintStart_toStartOf="@id/guidelineStartChipGroup"
-                app:layout_constraintTop_toBottomOf="@id/textViewLineage" />
+                app:layout_constraintTop_toBottomOf="@id/textViewAppName" />
 
             <com.google.android.flexbox.FlexboxLayout
                 android:id="@+id/flexBoxLinks"
@@ -98,7 +72,7 @@
                 app:justifyContent="center"
                 app:layout_constraintEnd_toEndOf="@id/guidelineEndChipGroup"
                 app:layout_constraintStart_toStartOf="@+id/guidelineStartChipGroup"
-                app:layout_constraintTop_toBottomOf="@id/textViewjOS">
+                app:layout_constraintTop_toBottomOf="@id/textViewAppVersion">
 
                 <Button
                     android:layout_width="wrap_content"

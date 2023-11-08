@@ -30,8 +30,8 @@
     <string name="i_egg_name" translatable="false">Nyandroid</string>
     <string name="i_egg" translatable="false">Android Ice Cream Sandwich (4.0)</string>
     <!-- Name of the K-release easter egg: a display case for all our tastiest desserts. [CHAR LIMIT=30] -->
-    <string name="k_dessert_case">Dessert Case</string>
-    <string name="k_egg">Android KitKat (4.4)</string>
+    <string name="k_dessert_case" translatable="false">Dessert Case</string>
+    <string name="k_egg" translatable="false">Android KitKat (4.4)</string>
 
     <!-- used by DessertCase -->
     <dimen name="k_dessert_case_cell_size">192dp</dimen>
@@ -41,4 +41,5 @@
     <string name="q_egg_name" translatable="false">Icon Quiz</string>
     <string name="q_egg" translatable="false">Android Q (Quince Tart) (10)</string>
     <string name="again">Push The Back Button Again</string>
+    <string name="unknown" translatable="false">?</string>
 </resources>

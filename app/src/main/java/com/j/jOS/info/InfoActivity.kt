@@ -6,9 +6,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.j.jOS.Version.os_ver
 import com.j.jOS.databinding.ActivityAboutBinding
 import com.j.jOS.egg.PlatLogoActivity
-//import lineageos.os.Build
 
 class InfoActivity : Activity() {
 
@@ -24,14 +24,10 @@ class InfoActivity : Activity() {
         _binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //val lineageos = Build.LINEAGEOS_VERSION
-        //val substring = "beyond1lte"
-        //val usingjOSdevice = lineageos.contains(substring)
-        //if (usingjOSdevice) {
-            //binding.textViewjOS.text = "jOS device"
-        //}
-        //binding.textViewLineage.text = lineageos
 
+        val ver = os_ver
+        val jos_ver = "jOS " + ver
+        binding.textViewAppVersion.text = jos_ver
         val imageViewAppIcon = binding.imageViewAppIcon
         imageViewAppIcon.setOnLongClickListener(View.OnLongClickListener { v ->
             try {
