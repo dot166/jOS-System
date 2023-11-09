@@ -20,8 +20,13 @@ configure<GenerateBpPluginExtension> {
     targetSdk.set(33) // android.defaultConfig.targetSdk!!)
     availableInAOSP.set { module: Module ->
         when {
-            module.group.startsWith("androidx") -> true
-            module.group.startsWith("com.google") -> true
+            module.group.startsWith("androidx") -> {
+                !module.group.startsWith("androidx.databinding") &&
+                        !module.group.startsWith("androidx.preference")
+            }
+            module.group.startsWith("com.google") -> {
+                !module.group.startsWith("com.google.android.flexbox")
+            }
             module.group.startsWith("org.jetbrains") -> true
             else -> false
         }
