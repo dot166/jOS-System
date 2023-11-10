@@ -21,8 +21,6 @@ android_app {
         "jOS_androidx.preference_preference-ktx",
         "jOS_com.github.bumptech.glide_glide",
         "com.google.android.material_material",
-        "jOS_com.google.android.flexbox_flexbox",
-        "jOS_com.louiscad.splitties_splitties-mainthread",
         "jOS_androidx.databinding_viewbinding",
         "jOS_androidx.databinding_databinding-common",
         "jOS_androidx.databinding_databinding-runtime",
