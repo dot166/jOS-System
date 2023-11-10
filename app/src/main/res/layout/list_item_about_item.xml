@@ -16,18 +16,13 @@
         <variable
             name="subtitle"
             type="String" />
-
-        <variable
-            name="url"
-            type="String" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#333333"
-        android:padding="8dp"
-        app:openUrlOnClick="@{url}">
+        android:padding="8dp">
 
         <LinearLayout
             android:id="@+id/layoutDescription"

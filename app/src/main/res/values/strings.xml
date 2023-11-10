@@ -14,7 +14,7 @@
     <string name="launcher_settings">Launcher Settings</string>
     <string name="kbd_settings">Keyboard Settings</string>
     <string name="settings_fragment_name" translatable="false">com.j.jOS.SettingsActivity$LauncherSettingsFragment</string>
-    <string name="Info">Info</string>
+    <string name="Info">About jOS</string>
     <string name="jOS">jOS Team</string>
     <string name="github" translatable="false">GitHub</string>
     <string name="about_team_jf916_role">Lead Developer</string>

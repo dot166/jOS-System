@@ -24,9 +24,7 @@ configure<GenerateBpPluginExtension> {
                 !module.group.startsWith("androidx.databinding") &&
                         !module.group.startsWith("androidx.preference")
             }
-            module.group.startsWith("com.google") -> {
-                !module.group.startsWith("com.google.android.flexbox")
-            }
+            module.group.startsWith("com.google") -> true
             module.group.startsWith("org.jetbrains") -> true
             else -> false
         }
