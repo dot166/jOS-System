@@ -1,5 +1,6 @@
 android_app {
     name: "jOS-System",
+    platform_apis: true,
 
     resource_dirs: ["src/main/res"],
 
@@ -23,7 +24,6 @@ android_app {
         "androidx.coordinatorlayout_coordinatorlayout",
         "jOS_androidx.databinding_viewbinding",
         "jOS_androidx.databinding_databinding-common",
-        "Settings-core",
         "jOS_androidx.databinding_databinding-runtime",
         "jOS_androidx.databinding_databinding-adapters",
         "jOS_androidx.databinding_databinding-ktx",
@@ -32,8 +32,6 @@ android_app {
     optimize: {
         proguard_flags_files: ["proguard-rules.pro"],
     },
-
-    sdk_version: "current",
 
     kotlincflags: ["-Xjvm-default=enable"],
 }
