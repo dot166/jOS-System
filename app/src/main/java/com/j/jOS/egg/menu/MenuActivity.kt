@@ -5,23 +5,27 @@ import android.content.ComponentName
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.Button
 import androidx.browser.customtabs.CustomTabsIntent
 import com.android_i.egg.Nyandroid
 import com.android_k.egg.DessertCase
 import com.android_l.egg.LLandActivity
-import com.j.jOS.databinding.ActivityMenuBinding
+import com.j.jOS.R
 
 class MenuActivity : Activity() {
 
-    private lateinit var binding: ActivityMenuBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_menu)
+        val ics = findViewById<Button>(R.id.ics)
+        val k = findViewById<Button>(R.id.k)
+        val l = findViewById<Button>(R.id.l)
+        val p = findViewById<Button>(R.id.p)
+        val q = findViewById<Button>(R.id.q)
+        val jf916 = findViewById<Button>(R.id.jf916)
+        val bh196 = findViewById<Button>(R.id.bh196)
 
-        binding = ActivityMenuBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.ics.setOnClickListener { view ->
+        ics.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, Nyandroid::class.java)
                     .setFlags(
@@ -32,7 +36,7 @@ class MenuActivity : Activity() {
             )
         }
 
-        binding.k.setOnClickListener { view ->
+        k.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, DessertCase::class.java)
                     .setFlags(
@@ -43,7 +47,7 @@ class MenuActivity : Activity() {
             )
         }
 
-        binding.l.setOnClickListener { view ->
+        l.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, LLandActivity::class.java)
                     .setFlags(
@@ -54,28 +58,28 @@ class MenuActivity : Activity() {
             )
         }
 
-        binding.p.setOnClickListener { view ->
+        p.setOnClickListener {
             val intent = Intent(Intent.ACTION_MAIN)
             intent.component =
                 ComponentName("com.android.egg", "com.android.egg.paint.PaintActivity")
             startActivity(intent)
         }
 
-        binding.q.setOnClickListener { view ->
+        q.setOnClickListener {
             val intent = Intent(Intent.ACTION_MAIN)
             intent.component =
                 ComponentName("com.android.egg", "com.android.egg.quares.QuaresActivity")
             startActivity(intent)
         }
 
-        binding.jf916.setOnClickListener { view ->
+        jf916.setOnClickListener {
             val url = "https://github.com/jf916"
             val intent: CustomTabsIntent = CustomTabsIntent.Builder()
                 .build()
             intent.launchUrl(applicationContext, Uri.parse(url))
         }
 
-        binding.bh196.setOnClickListener { view ->
+        bh196.setOnClickListener {
             val url = "https://github.com/bh196"
             val intent: CustomTabsIntent = CustomTabsIntent.Builder()
                 .build()

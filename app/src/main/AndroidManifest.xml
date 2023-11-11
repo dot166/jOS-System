@@ -4,10 +4,6 @@
     android:versionCode="33"
     android:versionName="13.5">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.SET_WALLPAPER" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -36,25 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>-->
-        <activity
-            android:name="com.j.Wallpapers.WallpaperActivity"
-            android:exported="true"
-            android:label="@string/wallpaper_app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.SET_WALLPAPER" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.j.Wallpapers.WallpapersListFragment"
-            android:exported="false"
-            android:label="@string/home_screen" />
-        <activity
-            android:name="com.j.Wallpapers.lock"
-            android:exported="false"
-            android:label="@string/lock_screen" />
 
         <!-- started from ... somewhere -->
         <activity
@@ -101,21 +78,6 @@
                 <action android:name="android.service.dreams.DreamService" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </service>
-
-        <service
-            android:name="com.j.Wallpapers.MyWallpaperService"
-            android:enabled="true"
-            android:exported="true"
-            android:label="DVD Live Wallpaper"
-            android:permission="android.permission.BIND_WALLPAPER">
-            <intent-filter>
-                <action android:name="android.service.wallpaper.WallpaperService" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.service.wallpaper"
-                android:resource="@xml/mywallpaper" />
         </service>
     </application>
 
