@@ -25,7 +25,7 @@
             android:exported="true"
             android:label="@string/jOS_egg_name"
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
-        <activity
+        <!--<activity
             android:name=".SettingsActivity"
             android:exported="true"
             android:icon="@mipmap/ic_launcher"
@@ -35,7 +35,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name="com.j.Wallpapers.WallpaperActivity"
             android:exported="true"
