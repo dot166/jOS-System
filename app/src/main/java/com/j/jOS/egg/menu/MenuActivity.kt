@@ -3,7 +3,9 @@ package com.j.jOS.egg.menu
 import android.app.Activity
 import android.content.ComponentName
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import androidx.browser.customtabs.CustomTabsIntent
 import com.android_i.egg.Nyandroid
 import com.android_k.egg.DessertCase
 import com.android_l.egg.LLandActivity
@@ -64,6 +66,20 @@ class MenuActivity : Activity() {
             intent.component =
                 ComponentName("com.android.egg", "com.android.egg.quares.QuaresActivity")
             startActivity(intent)
+        }
+
+        binding.jf916.setOnClickListener { view ->
+            val url = "https://github.com/jf916"
+            val intent: CustomTabsIntent = CustomTabsIntent.Builder()
+                .build()
+            intent.launchUrl(applicationContext, Uri.parse(url))
+        }
+
+        binding.bh196.setOnClickListener { view ->
+            val url = "https://github.com/bh196"
+            val intent: CustomTabsIntent = CustomTabsIntent.Builder()
+                .build()
+            intent.launchUrl(applicationContext, Uri.parse(url))
         }
     }
 }

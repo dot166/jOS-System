@@ -2,14 +2,7 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/apk/res-auto">
-
-    <data>
-
-        <variable
-            name="version"
-            type="String" />
-    </data>
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
@@ -58,13 +51,57 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent">
 
-                                <include
-                                    layout="@layout/list_item_about_item"
+                                <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    bind:icon="@{@drawable/i_platlogo}"
-                                    bind:subtitle="@{@string/i_egg}"
-                                    bind:title="@{@string/i_egg_name}" />
+                                    android:background="#333333"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutDescription1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="40dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView1"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/i_egg_name"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                            android:textColor="#FFFFFF"
+                                            tools:text="Android Easter Egg name" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/i_egg"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                            tools:text="Android Version"
+                                            tools:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView1"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="8dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/i_platlogo"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription1"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription1"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription1"
+                                        app:layout_constraintVertical_bias="0.0"
+                                        tools:srcCompat="@mipmap/apk"
+                                        tools:visibility="visible" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -91,13 +128,57 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent">
 
-                                <include
-                                    layout="@layout/list_item_about_item"
+                                <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    bind:icon="@{@drawable/k_platlogo}"
-                                    bind:subtitle="@{@string/k_egg}"
-                                    bind:title="@{@string/k_dessert_case}" />
+                                    android:background="#333333"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutDescription2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="40dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/k_dessert_case"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                            android:textColor="#FFFFFF"
+                                            tools:text="Android Easter Egg name" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/k_egg"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                            tools:text="Android Version"
+                                            tools:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="8dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/k_platlogo"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription2"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription2"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription2"
+                                        app:layout_constraintVertical_bias="0.0"
+                                        tools:srcCompat="@mipmap/apk"
+                                        tools:visibility="visible" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -124,13 +205,57 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent">
 
-                                <include
-                                    layout="@layout/list_item_about_item"
+                                <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    bind:icon="@{@drawable/l_icon}"
-                                    bind:subtitle="@{@string/l_egg}"
-                                    bind:title="@{@string/l_lland}" />
+                                    android:background="#333333"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutDescription3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="40dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/l_lland"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                            android:textColor="#FFFFFF"
+                                            tools:text="Android Easter Egg name" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/l_egg"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                            tools:text="Android Version"
+                                            tools:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="8dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/l_icon"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription3"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription3"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription3"
+                                        app:layout_constraintVertical_bias="0.0"
+                                        tools:srcCompat="@mipmap/apk"
+                                        tools:visibility="visible" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -157,13 +282,57 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent">
 
-                                <include
-                                    layout="@layout/list_item_about_item"
+                                <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    bind:icon="@{@drawable/p_icon}"
-                                    bind:subtitle="@{@string/p_egg}"
-                                    bind:title="@{@string/p_app_name}" />
+                                    android:background="#333333"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutDescription4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="40dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/p_app_name"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                            android:textColor="#FFFFFF"
+                                            tools:text="Android Easter Egg name" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/p_egg"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                            tools:text="Android Version"
+                                            tools:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="8dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/p_icon"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription4"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription4"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription4"
+                                        app:layout_constraintVertical_bias="0.0"
+                                        tools:srcCompat="@mipmap/apk"
+                                        tools:visibility="visible" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -190,13 +359,57 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent">
 
-                                <include
-                                    layout="@layout/list_item_about_item"
+                                <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    bind:icon="@{@drawable/q_icon}"
-                                    bind:subtitle="@{@string/q_egg}"
-                                    bind:title="@{@string/q_egg_name}" />
+                                    android:background="#333333"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutDescription5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="40dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView5"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/p_app_name"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                            android:textColor="#FFFFFF"
+                                            tools:text="Android Easter Egg name" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/p_egg"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                            tools:text="Android Version"
+                                            tools:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="8dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/q_icon"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription5"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription5"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription5"
+                                        app:layout_constraintVertical_bias="0.0"
+                                        tools:srcCompat="@mipmap/apk"
+                                        tools:visibility="visible" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -243,21 +456,159 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@id/textViewTopHeader">
 
-                                <include
-                                    layout="@layout/list_item_about_item"
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/jf916"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    bind:icon="@{@drawable/profile_pic_jf916}"
-                                    bind:subtitle="@{@string/about_team_jf916_role}"
-                                    bind:title="@{@string/about_team_jf916_name}" />
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp">
 
-                                <include
-                                    layout="@layout/list_item_about_item"
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingBottom="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                            <androidx.constraintlayout.widget.ConstraintLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#333333"
+                                                android:padding="8dp">
+
+                                                <LinearLayout
+                                                    android:id="@+id/layoutDescription1_1"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="16dp"
+                                                    android:gravity="center_vertical"
+                                                    android:minHeight="40dp"
+                                                    android:orientation="vertical"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toEndOf="@+id/imageView1_1"
+                                                    app:layout_constraintTop_toTopOf="parent">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/about_team_jf916_name"
+                                                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                                        android:textColor="#FFFFFF"
+                                                        tools:text="My name" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/about_team_jf916_role"
+                                                        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                                        tools:text="Developer"
+                                                        tools:visibility="visible" />
+                                                </LinearLayout>
+
+                                                <ImageView
+                                                    android:id="@+id/imageView1_1"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:layout_marginStart="8dp"
+                                                    android:padding="4dp"
+                                                    android:src="@drawable/profile_pic_jf916"
+                                                    app:layout_constraintBottom_toBottomOf="@id/layoutDescription1_1"
+                                                    app:layout_constraintEnd_toStartOf="@+id/layoutDescription1_1"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="@id/layoutDescription1_1"
+                                                    app:layout_constraintVertical_bias="0.0"
+                                                    tools:srcCompat="@drawable/ic_app"
+                                                    tools:visibility="visible" />
+
+                                            </androidx.constraintlayout.widget.ConstraintLayout>
+                                        </LinearLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/bh196"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    bind:icon="@{@drawable/profile_pic_bh916}"
-                                    bind:subtitle="@{@string/about_team_bh916_role}"
-                                    bind:title="@{@string/about_team_bh916_name}" />
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingBottom="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                            <androidx.constraintlayout.widget.ConstraintLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#333333"
+                                                android:padding="8dp">
+
+                                                <LinearLayout
+                                                    android:id="@+id/layoutDescription1_2"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="16dp"
+                                                    android:gravity="center_vertical"
+                                                    android:minHeight="40dp"
+                                                    android:orientation="vertical"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toEndOf="@+id/imageView1_2"
+                                                    app:layout_constraintTop_toTopOf="parent">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/about_team_bh196_name"
+                                                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                                        android:textColor="#FFFFFF"
+                                                        tools:text="My name" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/about_team_bh196_role"
+                                                        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                                        tools:text="Developer"
+                                                        tools:visibility="visible" />
+                                                </LinearLayout>
+
+                                                <ImageView
+                                                    android:id="@+id/imageView1_2"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:layout_marginStart="8dp"
+                                                    android:padding="4dp"
+                                                    android:src="@drawable/profile_pic_bh196"
+                                                    app:layout_constraintBottom_toBottomOf="@id/layoutDescription1_2"
+                                                    app:layout_constraintEnd_toStartOf="@+id/layoutDescription1_2"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="@id/layoutDescription1_2"
+                                                    app:layout_constraintVertical_bias="0.0"
+                                                    tools:srcCompat="@drawable/ic_app"
+                                                    tools:visibility="visible" />
+
+                                            </androidx.constraintlayout.widget.ConstraintLayout>
+                                        </LinearLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.cardview.widget.CardView>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
