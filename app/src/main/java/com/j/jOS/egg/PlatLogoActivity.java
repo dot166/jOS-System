@@ -16,17 +16,12 @@
 
 package com.j.jOS.egg;
 
-import static com.j.jOS.Version.os_ver;
-
+import android.os.SystemProperties;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.icu.text.SimpleDateFormat;
-import android.icu.util.Calendar;
 import android.os.Bundle;
-import android.os.Build;
-import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
@@ -36,14 +31,11 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.j.jOS.R;
-import com.j.jOS.egg.menu.MenuActivity;
 
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
-
-import java.util.Date;
-import java.util.Locale;
+import com.j.jOS.R;
+import com.j.jOS.egg.menu.MenuActivity;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
@@ -85,6 +77,12 @@ public class PlatLogoActivity extends Activity {
         letter.setText("jOS");
 
         final int p = (int) (4 * metrics.density);
+
+
+        final String KEY_JOS_VERSION_PROP = "ro.j.osversion";
+        CharSequence os_ver = SystemProperties.get(KEY_JOS_VERSION_PROP,
+                getApplicationContext().getString(R.string.unknown));
+
         String jos_ver = "jOS " + os_ver + " (M)";
 
         final TextView tv = new TextView(this);
