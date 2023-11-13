@@ -7,6 +7,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.browser.customtabs.CustomTabsIntent
+import androidx.cardview.widget.CardView
 import com.android_i.egg.Nyandroid
 import com.android_k.egg.DessertCase
 import com.android_l.egg.LLandActivity
@@ -17,13 +18,13 @@ class MenuActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-        val ics = findViewById<Button>(R.id.ics)
-        val k = findViewById<Button>(R.id.k)
-        val l = findViewById<Button>(R.id.l)
-        val p = findViewById<Button>(R.id.p)
-        val q = findViewById<Button>(R.id.q)
-        val jf916 = findViewById<Button>(R.id.jf916)
-        val bh196 = findViewById<Button>(R.id.bh196)
+        val ics = findViewById<CardView>(R.id.ics)
+        val k = findViewById<CardView>(R.id.k)
+        val l = findViewById<CardView>(R.id.l)
+        val p = findViewById<CardView>(R.id.p)
+        val q = findViewById<CardView>(R.id.q)
+        val jf916 = findViewById<CardView>(R.id.jf916)
+        val bh196 = findViewById<CardView>(R.id.bh196)
 
         ics.setOnClickListener {
             startActivity(
