@@ -77,14 +77,14 @@ class MenuActivity : Activity() {
             val url = "https://github.com/jf916"
             val intent: CustomTabsIntent = CustomTabsIntent.Builder()
                 .build()
-            intent.launchUrl(applicationContext, Uri.parse(url))
+            intent.launchUrl(this@MenuActivity, Uri.parse(url))
         }
 
         bh196.setOnClickListener {
             val url = "https://github.com/bh196"
             val intent: CustomTabsIntent = CustomTabsIntent.Builder()
                 .build()
-            intent.launchUrl(applicationContext, Uri.parse(url))
+            intent.launchUrl(this@MenuActivity, Uri.parse(url))
         }
     }
 }
