@@ -378,7 +378,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/p_app_name"
+                                            android:text="@string/q_egg_name"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Large"
                                             android:textColor="#FFFFFF"
                                             tools:text="Android Easter Egg name" />
@@ -386,7 +386,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/p_egg"
+                                            android:text="@string/q_egg"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Medium"
                                             tools:text="Android Version"
                                             tools:visibility="visible" />
