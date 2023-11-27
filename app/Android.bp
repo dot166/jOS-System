@@ -1,5 +1,16 @@
 android_app {
     name: "jOS-System",
+
+    product_specific: true,
+
+    static_libs: ["jOS-System-Core"],
+
+    optimize: {
+        proguard_flags_files: ["proguard-rules.pro"],
+    },
+}
+android_library {
+    name: "jOS-System-Core",
     platform_apis: true,
 
     resource_dirs: ["src/main/res"],
@@ -11,8 +22,6 @@ android_app {
     ],
 
     manifest: "src/main/AndroidManifest.xml",
-
-    product_specific: true,
 
     static_libs: [
         // DO NOT EDIT THIS SECTION MANUALLY
@@ -28,10 +37,6 @@ android_app {
         "jOS_androidx.databinding_databinding-adapters",
         "jOS_androidx.databinding_databinding-ktx",
     ],
-
-    optimize: {
-        proguard_flags_files: ["proguard-rules.pro"],
-    },
 
     kotlincflags: ["-Xjvm-default=enable"],
 }
