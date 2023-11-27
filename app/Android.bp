@@ -35,12 +35,3 @@ android_app {
 
     kotlincflags: ["-Xjvm-default=enable"],
 }
-
-android_library {
-    name: "jOS-System-Core",
-    platform_apis: true,
-
-    srcs: ["src/main/java/com/j/jOS/Version.java"],
-
-    resource_dirs: ["src/main/res"],
-}
