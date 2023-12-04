@@ -5,8 +5,6 @@ import android.content.ComponentName
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Button
-import androidx.browser.customtabs.CustomTabsIntent
 import androidx.cardview.widget.CardView
 import com.android_i.egg.Nyandroid
 import com.android_k.egg.DessertCase
@@ -23,8 +21,6 @@ class MenuActivity : Activity() {
         val l = findViewById<CardView>(R.id.l)
         val p = findViewById<CardView>(R.id.p)
         val q = findViewById<CardView>(R.id.q)
-        val jf916 = findViewById<CardView>(R.id.jf916)
-        val bh196 = findViewById<CardView>(R.id.bh196)
 
         ics.setOnClickListener {
             startActivity(
@@ -71,20 +67,6 @@ class MenuActivity : Activity() {
             intent.component =
                 ComponentName("com.android.egg", "com.android.egg.quares.QuaresActivity")
             startActivity(intent)
-        }
-
-        jf916.setOnClickListener {
-            val url = "https://github.com/jf916"
-            val intent: CustomTabsIntent = CustomTabsIntent.Builder()
-                .build()
-            intent.launchUrl(this@MenuActivity, Uri.parse(url))
-        }
-
-        bh196.setOnClickListener {
-            val url = "https://github.com/bh196"
-            val intent: CustomTabsIntent = CustomTabsIntent.Builder()
-                .build()
-            intent.launchUrl(this@MenuActivity, Uri.parse(url))
         }
     }
 }
