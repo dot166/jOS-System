@@ -79,7 +79,7 @@ public class PlatLogoActivity extends Activity {
         final int p = (int) (4 * metrics.density);
 
 
-        final String KEY_JOS_VERSION_PROP = "ro.j.osversion.disp";
+        final String KEY_JOS_VERSION_PROP = "ro.j.osversion";
         CharSequence os_ver = SystemProperties.get(KEY_JOS_VERSION_PROP,
                 getApplicationContext().getString(R.string.unknown));
 
