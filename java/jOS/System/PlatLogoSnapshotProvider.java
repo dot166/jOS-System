@@ -1,14 +1,12 @@
-package jOS;
+package jOS.System;
 
-import static jOS.PlatLogoActivity.BGCOLOR;
+import static jOS.System.PlatLogoActivity.BGCOLOR;
 
 import android.content.Context;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-
-import jOS.System.R;
 
 public class PlatLogoSnapshotProvider extends com.dede.basic.PlatLogoSnapshotProvider {
 

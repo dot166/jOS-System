@@ -1,4 +1,4 @@
-package jOS
+package jOS.System
 
 import android.app.Activity
 import android.content.ComponentName
@@ -7,8 +7,6 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.cardview.widget.CardView
-
-import jOS.System.R
 
 class CreditsActivity : Activity() {
 
