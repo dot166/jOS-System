@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import jOS.System.R
+import jOS.System.R;
 
 public class PlatLogoSnapshotProvider extends com.dede.basic.PlatLogoSnapshotProvider {
 
