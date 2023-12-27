@@ -1,0 +1,31 @@
+android_app {
+    name: "jOS-System",
+    platform_apis: true,
+    certificate: "platform",
+
+    resource_dirs: ["res"],
+
+    srcs: [
+        "java/**/*.kt",
+        "java/**/*.java",
+    ],
+
+    manifest: "AndroidManifest.xml",
+
+    product_specific: true,
+
+    static_libs: [
+        // DO NOT EDIT THIS SECTION MANUALLY
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.cardview_cardview",
+        "androidx.browser_browser",
+        "jOS_androidx.preference_preference-ktx",
+        "androidx.coordinatorlayout_coordinatorlayout",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard-rules.pro"],
+    },
+
+    kotlincflags: ["-Xjvm-default=enable"],
+}
