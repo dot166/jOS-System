@@ -19,7 +19,8 @@ android_app {
         "androidx-constraintlayout_constraintlayout",
         "androidx.cardview_cardview",
         "androidx.browser_browser",
-        "androidx.preference_preference",
+        "androidx.recyclerview_recyclerview",
+        "jOS_androidx.preference_preference-ktx",
         "androidx.coordinatorlayout_coordinatorlayout",
     ],
 

@@ -8,6 +8,8 @@ import android.os.Bundle
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.cardview.widget.CardView
 
+import jOS.System.R
+
 class CreditsActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

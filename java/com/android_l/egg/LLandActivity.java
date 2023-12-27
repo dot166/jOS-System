@@ -21,7 +21,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import jOS.R;
+import jOS.System.R;
 
 
 public class LLandActivity extends Activity {

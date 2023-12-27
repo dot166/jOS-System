@@ -41,7 +41,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import jOS.R;
+import jOS.System.R;
 
 import java.util.ArrayList;
 

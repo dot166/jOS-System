@@ -8,7 +8,7 @@ import androidx.cardview.widget.CardView
 import com.android_i.egg.Nyandroid
 import com.android_k.egg.DessertCase
 import com.android_l.egg.LLandActivity
-import jOS.R
+import jOS.System.R
 
 class MenuActivity : Activity() {
 
