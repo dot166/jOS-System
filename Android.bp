@@ -15,13 +15,13 @@ android_app {
     product_specific: true,
 
     static_libs: [
-        // DO NOT EDIT THIS SECTION MANUALLY
         "androidx-constraintlayout_constraintlayout",
         "androidx.cardview_cardview",
         "androidx.browser_browser",
         "androidx.recyclerview_recyclerview",
         "jOS_androidx.preference_preference-ktx",
         "androidx.coordinatorlayout_coordinatorlayout",
+        "org.lineageos.platform-res",
     ],
 
     optimize: {
