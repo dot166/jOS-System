@@ -13,9 +13,8 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/ic_app"
         android:label="@string/app_name"
-        tools:replace="android:label,android:icon"
         android:supportsRtl="true"
-        android:theme="@lineageos.platform:style/jOS.Theme">
+        android:theme="@*lineageos.platform:style/jOS.Theme">
         <activity
             android:name="com.j.jOS.egg.menu.MenuActivity"
             android:exported="false"
