@@ -23,7 +23,7 @@
             android:name=".PlatLogoActivity"
             android:exported="true"
             android:label="@string/jOS_egg_name"
-            android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar" />
+            android:theme="@android:style/Theme.Holo.Wallpaper" />
         <!-- Contributors Cloud (MyDeviceInfo category) -->
         <activity
             android:name=".CreditsActivity"
@@ -57,7 +57,7 @@
             android:icon="@drawable/i_platlogo"
             android:label="@string/i_egg_name"
             android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+            android:theme="@android:style/Theme.Holo.Fullscreen" />
 
         <activity
             android:name="com.android_l.egg.LLandActivity"
@@ -67,8 +67,7 @@
             android:icon="@drawable/l_icon"
             android:label="@string/l_lland"
             android:launchMode="singleInstance"
-            android:screenOrientation="locked"
-            android:theme="@android:style/Theme.Holo.NoActionBar" />
+            android:screenOrientation="locked" />
 
         <activity
             android:name="com.android_k.egg.DessertCase"
@@ -79,7 +78,7 @@
             android:label="@string/k_dessert_case"
             android:launchMode="singleInstance"
             android:screenOrientation="locked"
-            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+            android:theme="@android:style/Theme.Holo.Fullscreen" />
 
         <!-- a gallery of delicious treats -->
         <service
