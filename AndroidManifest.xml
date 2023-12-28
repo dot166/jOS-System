@@ -80,7 +80,7 @@
             android:label="@string/k_dessert_case"
             android:launchMode="singleInstance"
             android:screenOrientation="locked"
-            android:theme="@android:style/Theme.Holo.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.Holo.ActionBar.Fullscreen" />
 
         <!-- a gallery of delicious treats -->
         <service
