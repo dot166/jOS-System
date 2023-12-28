@@ -56,8 +56,7 @@
             android:hardwareAccelerated="true"
             android:icon="@drawable/i_platlogo"
             android:label="@string/i_egg_name"
-            android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Holo.Fullscreen" />
+            android:launchMode="singleInstance" />
 
         <activity
             android:name="com.android_l.egg.LLandActivity"
@@ -77,8 +76,7 @@
             android:icon="@drawable/k_platlogo"
             android:label="@string/k_dessert_case"
             android:launchMode="singleInstance"
-            android:screenOrientation="locked"
-            android:theme="@android:style/Theme.Holo.Fullscreen" />
+            android:screenOrientation="locked" />
 
         <!-- a gallery of delicious treats -->
         <service
