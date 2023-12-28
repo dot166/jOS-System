@@ -12,6 +12,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/ic_app"
         android:label="@string/app_name"
+        tools:replace="android:label"
         android:supportsRtl="true"
         android:theme="@lineageos.platform:style/jOS.Theme">
         <activity
