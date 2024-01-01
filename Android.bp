@@ -12,6 +12,8 @@ android_app {
 
     manifest: "AndroidManifest.xml",
 
+    product_specific: true,
+
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
         "androidx.cardview_cardview",
