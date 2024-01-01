@@ -2,7 +2,6 @@ android_app {
     name: "jOS-System",
     platform_apis: true,
     certificate: "platform",
-    sdk_version: "current",
 
     resource_dirs: ["res"],
 
