@@ -1,0 +1,8 @@
+android_library {
+    name: "jOS-common-library",
+
+    srcs: ["java/**/*.kt"],
+    static_libs: ["androidx.appcompat_appcompat"],
+
+    kotlincflags: ["-Xjvm-default=enable"],
+}

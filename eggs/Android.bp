@@ -1,6 +1,5 @@
 android_app {
-    name: "jOS-System",
-    platform_apis: true,
+    name: "jOS-EasterEgg",
     certificate: "platform",
 
     resource_dirs: ["res"],

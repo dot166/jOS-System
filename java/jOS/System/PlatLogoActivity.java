@@ -162,10 +162,11 @@ public class PlatLogoActivity extends Activity {
                             System.currentTimeMillis());
                 }
                 try {
-                    startActivity(new Intent(PlatLogoActivity.this, MenuActivity.class)
-                            .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                                    | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                    | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS));
+                    startActivity(new Intent(Intent.ACTION_MAIN)
+                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                            | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                            | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
+                        .addCategory("jOS.System.category.PLATLOGO"));
                 } catch (ActivityNotFoundException ex) {
                     android.util.Log.e("PlatLogoActivity", "Couldn't catch a break.");
                 }
