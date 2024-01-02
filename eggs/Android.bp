@@ -2,6 +2,8 @@ android_app {
     name: "jOS-EasterEgg",
     certificate: "platform",
 
+    sdk_version: "current",
+
     resource_dirs: ["res"],
 
     srcs: [
