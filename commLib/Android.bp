@@ -1,13 +1,20 @@
 android_library {
     name: "jOS-common-library",
-
-    sdk_version: "current",
+    platform_apis: true,
 
     srcs: ["java/**/*.kt"],
     
     manifest: "AndroidManifest.xml",
     
-    static_libs: ["androidx.appcompat_appcompat"],
+    static_libs: [
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.cardview_cardview",
+        "androidx.browser_browser",
+        "jOS-common-library",
+        "androidx.coordinatorlayout_coordinatorlayout",
+        "org.lineageos.platform.internal",
+        "androidx.appcompat_appcompat"
+    ],
 
     kotlincflags: ["-Xjvm-default=enable"],
 }
