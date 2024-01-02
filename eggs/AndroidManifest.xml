@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@*lineageos.platform:style/jOS.Theme">
         <activity
-            android:name="com.j.jOS.egg.menu.MenuActivity"
+            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -22,7 +22,7 @@
 
         <!-- started from ... somewhere -->
         <activity
-            android:name="com.android_i.egg.Nyandroid"
+            android:name=".Nyandroid"
             android:excludeFromRecents="true"
             android:exported="false"
             android:hardwareAccelerated="true"
@@ -32,7 +32,7 @@
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
         <activity
-            android:name="com.android_l.egg.LLandActivity"
+            android:name=".LLandActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:hardwareAccelerated="true"
@@ -43,7 +43,7 @@
             android:theme="@android:style/Theme.Material.NoActionBar" />
 
         <activity
-            android:name="com.android_k.egg.DessertCase"
+            android:name=".DessertCase"
             android:excludeFromRecents="true"
             android:exported="false"
             android:hardwareAccelerated="true"
@@ -55,7 +55,7 @@
 
         <!-- a gallery of delicious treats -->
         <service
-            android:name="com.android_k.egg.DessertCaseDream"
+            android:name=".DessertCaseDream"
             android:enabled="false"
             android:exported="true"
             android:icon="@drawable/k_platlogo"
