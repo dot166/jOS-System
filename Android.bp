@@ -2,6 +2,7 @@ android_app {
     name: "jOS-System",
     platform_apis: true,
     certificate: "platform",
+    system_ext_specific: true,
 
     resource_dirs: ["res"],
 
@@ -11,8 +12,6 @@ android_app {
     ],
 
     manifest: "AndroidManifest.xml",
-
-    product_specific: true,
 
     static_libs: ["jOS-common-library"],
 

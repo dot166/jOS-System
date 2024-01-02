@@ -12,8 +12,6 @@ android_app {
 
     manifest: "AndroidManifest.xml",
 
-    product_specific: true,
-
     static_libs: ["jOS-common-library"],
 
     kotlincflags: ["-Xjvm-default=enable"],
