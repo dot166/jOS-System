@@ -1,6 +1,8 @@
 android_library {
     name: "jOS-common-library",
 
+    sdk_version: "current",
+
     srcs: ["java/**/*.kt"],
     
     manifest: "AndroidManifest.xml",
