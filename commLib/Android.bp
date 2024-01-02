@@ -10,7 +10,6 @@ android_library {
         "androidx-constraintlayout_constraintlayout",
         "androidx.cardview_cardview",
         "androidx.browser_browser",
-        "jOS-common-library",
         "androidx.coordinatorlayout_coordinatorlayout",
         "org.lineageos.platform.internal",
         "androidx.appcompat_appcompat"
