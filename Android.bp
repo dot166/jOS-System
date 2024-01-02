@@ -16,9 +16,5 @@ android_app {
 
     static_libs: ["jOS-common-library"],
 
-    optimize: {
-        proguard_flags_files: ["proguard-rules.pro"],
-    },
-
     kotlincflags: ["-Xjvm-default=enable"],
 }
