@@ -3,5 +3,11 @@
     package="jOS.System.lib">
 
 <!-- insert common apps here -->
+    <application>
+        <activity
+            android:name=".sdkplaceholder"
+            android:exported="true"
+            android:theme="@*lineageos.platform:style/jOS.Theme" />
+    </application>
 
 </manifest>

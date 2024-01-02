@@ -34,7 +34,6 @@ import android.widget.TextView;
 
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
-import com.j.jOS.egg.menu.MenuActivity;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
