@@ -1,6 +1,5 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
- *               2023-2024 ._______166
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +16,7 @@
 
 package jOS.System;
 
+import android.os.SystemProperties;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -34,8 +34,6 @@ import android.widget.TextView;
 
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
-
-import jOS.Core.Build;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
@@ -78,7 +76,10 @@ public class PlatLogoActivity extends Activity {
 
         final int p = (int) (4 * metrics.density);
 
-        CharSequence os_ver = Build.jOS_VERSION;
+
+        final String KEY_JOS_VERSION_PROP = "ro.j.osversion";
+        CharSequence os_ver = SystemProperties.get(KEY_JOS_VERSION_PROP,
+                getApplicationContext().getString(R.string.unknown));
 
         String jos_ver = "jOS " + os_ver;
 

@@ -12,7 +12,7 @@ android_app {
 
     manifest: "AndroidManifest.xml",
 
-    static_libs: ["jOS.System.internal"],
+    static_libs: ["jOS-common-library"],
 
     kotlincflags: ["-Xjvm-default=enable"],
 }
