@@ -5,16 +5,17 @@
     coreApp="true"
     android:sharedUserId="android.uid.system"
     android:versionCode="33"
-    android:versionName="13.5">
+    android:versionName="13.5"
+    android:sharedUserLabel="@*jOS.core:string/jOS_system_label">
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/ic_app"
-        android:label="@string/app_name"
+        android:icon="@*jOS.core:drawable/ic_app"
+        android:label="@*jOS.core:string/jOS_system_label"
         android:supportsRtl="true"
-        android:theme="@*lineageos.platform:style/jOS.Theme">
+        android:theme="@*jOS.core:style/jOS.Theme">
         <activity
             android:name=".PlatLogoActivity"
             android:exported="true"
