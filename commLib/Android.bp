@@ -12,7 +12,8 @@ android_library {
         "androidx.browser_browser",
         "androidx.coordinatorlayout_coordinatorlayout",
         "org.lineageos.platform.internal",
-        "androidx.appcompat_appcompat"
+        "androidx.appcompat_appcompat",
+        "androidx.preference_preference"
     ],
 
     kotlincflags: ["-Xjvm-default=enable"],
