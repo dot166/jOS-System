@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.j.jOSRestore"
     coreApp="true"
-    android:sharedUserId="android.uid.system>
+    android:sharedUserId="android.uid.system">
 
     <queries>
         <package android:name="com.google.android.apps.restore" />
