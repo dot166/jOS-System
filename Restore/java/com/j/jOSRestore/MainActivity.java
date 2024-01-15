@@ -81,7 +81,7 @@ public class MainActivity extends FragmentActivity
      */
     private String getPreferenceFragment() {
         String preferenceFragment = getIntent().getStringExtra(EXTRA_FRAGMENT);
-        String defaultFragment = getString(R.string.settings_fragment_name);
+        String defaultFragment = "com.j.jOSRestore.MainActivity$LauncherSettingsFragment"
 
         if (TextUtils.isEmpty(preferenceFragment)) {
             return defaultFragment;
