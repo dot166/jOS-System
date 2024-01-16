@@ -65,8 +65,31 @@ public class MainActivity extends FragmentActivity
             }
 
             final FragmentManager fm = getSupportFragmentManager();
+            final Fragment f = fm.getFragmentFactory().instantiate(getClassLoader(),
+                    getPreferenceFragment());
+            f.setArguments(args);
             // Display the fragment as the main content.
-            fm.beginTransaction().replace(R.id.content_frame, new LauncherSettingsFragment()).commit();
+            fm.beginTransaction().replace(R.id.content_frame, f).commit();
+        }
+    }
+
+    /**
+     * Obtains the preference fragment to instantiate in this activity.
+     *
+     * @return the preference fragment class
+     * @throws IllegalArgumentException if the fragment is unknown to this activity
+     */
+    private String getPreferenceFragment() {
+        String preferenceFragment = getIntent().getStringExtra(EXTRA_FRAGMENT);
+        String defaultFragment = "com.j.jOSRestore.MainActivity$LauncherSettingsFragment";
+
+        if (TextUtils.isEmpty(preferenceFragment)) {
+            return defaultFragment;
+        } else if (!preferenceFragment.equals(defaultFragment)) {
+            throw new IllegalArgumentException(
+                    "Invalid fragment for this activity: " + preferenceFragment);
+        } else {
+            return preferenceFragment;
         }
     }
 
@@ -134,7 +157,7 @@ public class MainActivity extends FragmentActivity
             if (savedInstanceState != null) {
                 mPreferenceHighlighted = savedInstanceState.getBoolean(SAVE_HIGHLIGHTED_KEY);
             }
-            setPreferencesFromResource(R.xml.preferences, rootKey);
+            setPreferencesFromResource(R.xml.launcher_preferences, rootKey);
 
             updatePreferences();
         }
