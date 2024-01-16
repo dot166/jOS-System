@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">jOS Restore</string>
+    <!-- unsused -->
     <string name="settings_fragment_name" translatable="false">com.j.jOSRestore.MainActivity$LauncherSettingsFragment</string>
 </resources>
