@@ -1,7 +1,5 @@
 package com.j.jOSRestore;
 
-import android.content.ActivityNotFoundException;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -10,7 +8,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.WindowCompat;
@@ -141,7 +138,7 @@ public class MainActivity extends FragmentActivity
     /**
      * This fragment shows the launcher preferences.
      */
-    public class LauncherSettingsFragment extends PreferenceFragmentCompat {
+    public static class LauncherSettingsFragment extends PreferenceFragmentCompat {
 
         private String mHighLightKey;
         private boolean mPreferenceHighlighted = false;
@@ -210,7 +207,7 @@ public class MainActivity extends FragmentActivity
          * will remove that preference from the list.
          */
         protected boolean initPreference(Preference preference) {
-            PackageManager pm = getPackageManager();
+            PackageManager pm = requireContext().getPackageManager();
             switch (preference.getKey()) {
                 case KEY_SETTINGS:
                     preference.setOnPreferenceClickListener(p -> {
