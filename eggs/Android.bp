@@ -1,5 +1,5 @@
 android_app {
-    name: "jEasterEgg",
+    name: "jOS-EasterEgg",
     platform_apis: true,
     certificate: "platform",
 
