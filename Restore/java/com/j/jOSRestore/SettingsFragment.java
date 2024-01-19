@@ -51,9 +51,9 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 preference.setOnPreferenceClickListener(p -> {
                     Intent intent = new Intent("com.stevesoltys.seedvault.RESTORE_BACKUP");
                     startActivity(intent);
-                    return isPackageInstalled("org.stevesoltys.seedvault", pm);
+                    return isPackageInstalled("com.stevesoltys.seedvault", pm);
                 });
-                return isPackageInstalled("org.stevesoltys.seedvault", pm);
+                return isPackageInstalled("com.stevesoltys.seedvault", pm);
             case KEY_GMS:
                 preference.setOnPreferenceClickListener(p -> {
                     Intent intent = new Intent();
