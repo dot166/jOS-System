@@ -57,7 +57,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             case KEY_GMS:
                 preference.setOnPreferenceClickListener(p -> {
                     Intent intent = new Intent();
-                    intent.setAction("com.google.android.apps.pixelmigrate.ACTION_D2D_MIGRATE_FLOW");
+                    intent.setAction("com.google.android.apps.restore.ACTION_SINGLE_RUN_D2D");
                     startActivity(intent);
                     return isPackageInstalled("com.google.android.apps.restore", pm);
                 });
