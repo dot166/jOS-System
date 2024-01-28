@@ -10,6 +10,7 @@ object TransformationMethodUtils {
 
     @JvmStatic
     @SuppressLint("RestrictedApi")
+    @Deprecated
     fun createAllCapsTransformationMethod(context: Context): TransformationMethod {
         return AllCapsTransformationMethod(context)
     }

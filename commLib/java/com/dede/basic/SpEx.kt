@@ -14,13 +14,16 @@ import android.content.SharedPreferences
  * @since 2020/10/20 3:01 PM
  */
 
+@Deprecated
 private val Context.sp: SharedPreferences
     get() = this.getSharedPreferences(this.packageName, Context.MODE_PRIVATE)
 
+@Deprecated
 fun Context.getLong(key: String, default: Long): Long {
     return sp.getLong(key, default)
 }
 
+@Deprecated
 fun Context.putLong(key: String, value: Long) {
     sp.edit().putLong(key, value).apply()
 }

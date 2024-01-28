@@ -2,7 +2,7 @@ android_library {
     name: "jOS-common-library",
     platform_apis: true,
 
-    srcs: ["java/**/*.kt"],
+    srcs: ["java/**/*.kt", "java/**/*.java"],
     
     manifest: "AndroidManifest.xml",
     

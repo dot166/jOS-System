@@ -7,10 +7,13 @@ import java.lang.ref.WeakReference
 
 abstract class PlatLogoSnapshotProvider {
 
+    @Deprecated
     open val includeBackground: Boolean = false
 
+    @Deprecated
     private var cache: WeakReference<View>? = null
 
+    @Deprecated
     fun get(context: Context): View {
         var view = cache?.get()
         if (view != null) {
@@ -22,5 +25,6 @@ abstract class PlatLogoSnapshotProvider {
         return view
     }
 
+    @Deprecated
     abstract fun create(context: Context): View
 }

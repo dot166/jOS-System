@@ -19,6 +19,7 @@ public class sdkplaceholder extends Activity {
     FrameLayout mContent;
     static final int BGCOLOR = 0xffed1d24;
     @Override
+    @Deprecated
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final TextView tv = new TextView(this);

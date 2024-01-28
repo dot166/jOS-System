@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_app"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@*lineageos.platform:style/jOS.Theme">
+        android:theme="@*jOS.Core:style/jOS.Theme">
         <activity
             android:name=".MenuActivity"
             android:exported="true">
