@@ -13,7 +13,15 @@ android_app {
 
     manifest: "AndroidManifest.xml",
 
-    static_libs: ["j.SDK.internal"],
+    static_libs: [
+    "j.SDK.internal",
+    "androidx-constraintlayout_constraintlayout",
+    "androidx.cardview_cardview",
+    "androidx.browser_browser",
+    "androidx.coordinatorlayout_coordinatorlayout",
+    "androidx.appcompat_appcompat",
+    "androidx.preference_preference",
+    ],
 
     kotlincflags: ["-Xjvm-default=enable"],
 }
