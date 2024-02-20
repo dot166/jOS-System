@@ -14,7 +14,7 @@ android_app {
     manifest: "AndroidManifest.xml",
 
     static_libs: [
-    "j.SDK.internal",
+    "j.SDK",
     "androidx-constraintlayout_constraintlayout",
     "androidx.cardview_cardview",
     "androidx.browser_browser",
