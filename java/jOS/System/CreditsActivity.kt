@@ -13,16 +13,8 @@ class CreditsActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_credits)
-        val lineage = findViewById<CardView>(R.id.lineage)
         val jf916 = findViewById<CardView>(R.id.jf916)
         val bh196 = findViewById<CardView>(R.id.bh196)
-
-        lineage.setOnClickListener {
-            val intent = Intent(Intent.ACTION_MAIN)
-            intent.component =
-                ComponentName("org.lineageos.lineageparts", "org.lineageos.lineageparts.contributors.ContributorsCloudFragment")
-            startActivity(intent)
-        }
 
         jf916.setOnClickListener {
             val url = "https://github.com/jf916"
