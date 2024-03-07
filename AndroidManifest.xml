@@ -4,8 +4,8 @@
     package="jOS.System"
     coreApp="true"
     android:sharedUserId="android.uid.system"
-    android:versionCode="33"
-    android:versionName="13.5">
+    android:versionCode="34"
+    android:versionName="15.0">
 
     <application
         android:allowBackup="true"
