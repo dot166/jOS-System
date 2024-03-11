@@ -17,7 +17,7 @@ class CreditsActivity : Activity() {
         val bh196 = findViewById<CardView>(R.id.bh196)
 
         jf916.setOnClickListener {
-            val url = "https://github.com/jf916"
+            val url = "https://github.com/dot166"
             val intent: CustomTabsIntent = CustomTabsIntent.Builder()
                 .build()
             intent.launchUrl(this@CreditsActivity, Uri.parse(url))
