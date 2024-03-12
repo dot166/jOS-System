@@ -21,9 +21,17 @@
     <string name="about_team_bh196_role">Developer</string>
     <string name="about_team_jf916_name" translatable="false">._______166</string>
     <string name="about_team_bh196_name" translatable="false">bh196</string>
-    <string name="url_github_repo" translatable="false">https://github.com/jf916/jOS-System</string>
+    <string name="url_github_repo" translatable="false">https://github.com/dot166/jOS-System</string>
     <string name="error_no_app_to_open_url">No app can open this url!</string>
     <string name="contributors_cloud_fragment_title">jOS Contributors</string>
+    <string-array name="themes">
+        <item>holo</item>
+        <item>material you (m3)</item>
+    </string-array>
+    <string-array name="themesConfig" translatable="false">
+        <item>Holo</item>
+        <item>M3</item>
+    </string-array>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />
@@ -44,5 +52,4 @@
     <string name="q_egg_name" translatable="false">Icon Quiz</string>
     <string name="q_egg" translatable="false">Android Q (Quince Tart) (10)</string>
     <string name="again">Push The Back Button Again</string>
-    <string name="unknown" translatable="false">?</string>
 </resources>

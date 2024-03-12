@@ -16,7 +16,8 @@
 
 package jOS.System;
 
-import android.os.SystemProperties;
+import static jOS.Core.Build.jOS_RELEASE;
+
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -76,12 +77,7 @@ public class PlatLogoActivity extends Activity {
 
         final int p = (int) (4 * metrics.density);
 
-
-        final String KEY_JOS_VERSION_PROP = "ro.j.osversion";
-        CharSequence os_ver = SystemProperties.get(KEY_JOS_VERSION_PROP,
-                getApplicationContext().getString(R.string.unknown));
-
-        String jos_ver = "jOS " + os_ver;
+        String jos_ver = "jOS " + jOS_RELEASE;
 
         final TextView tv = new TextView(this);
         if (light != null) tv.setTypeface(light);

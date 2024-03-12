@@ -1,24 +1,33 @@
 <resources>
-  <string name="app_name">jOS-System</string>
-  <string name="settings_name">Einstellungen</string>
-  <string name="system_settings">System Einstellungen</string>
-  <string name="gms">Google Play-Einstellungen (GMS(Google Play-Dienste))</string>
-  <string name="launcher_settings">Startprogramm Einstellungen</string>
-  <string name="kbd_settings">Tastatur Einstellungen</string>
-  <string name="wallpaper">Hintergrund</string>
-  <string name="change_wallpaper">Hintergrund ändern</string>
-  <string name="wallpaper_description">DVD-Live-Hintergrund</string>
-  <string name="wallpaper_app_name">jOS-Hintergründe</string>
-  <string name="home_screen">jOS-Hintergründe-Startbildschirm</string>
-  <string name="lock_screen">jOS-Hintergründe-Bildschirm sperren</string>
-  <string name="exit">Die App zum automatischen Beenden funktioniert nicht. Bitte beenden Sie die App manuell und gehen Sie zu Hintergrund und Stil</string>
-  <string name="skip">überspringen</string>
-  <string name="Info">Über jOS</string>
-  <string name="jOS">jOS-Team</string>
-  <string name="about_team_jf916_role">Leitender Entwicklerr</string>
-  <string name="about_team_bh196_role">Entwickler</string>
-  <string name="error_no_app_to_open_url">Keine App kann diese URL öffnen!</string>
-    <!-- jOS-Ei-Name -->
+    <string name="app_name">jOS-System</string>
+    <string name="settings_name">Einstellungen</string>
+    <string name="system_settings">System Einstellungen</string>
+    <string name="wallpaper_app_name">jOS-Hintergründe</string>
+    <string name="wallpaper">Hintergrund</string>
+    <string name="change_wallpaper">Hintergrund ändern</string>
+    <string name="wallpaper_description">DVD-Live-Hintergrund</string>
+    <string name="home_screen">jOS-Hintergründe-Startbildschirm</string>
+    <string name="lock_screen">jOS-Hintergründe-Bildschirm sperren</string>
+    <string name="exit">Die App zum automatischen Beenden funktioniert nicht. Bitte beenden Sie die App manuell und gehen Sie zu Hintergrund und Stil</string>
+    <string name="skip">überspringen</string>
+    <string name="gms">Google Play-Einstellungen (GMS(Google Play-Dienste))</string>
+    <string name="launcher_settings">Startprogramm Einstellungen</string>
+    <string name="kbd_settings">Tastatur Einstellungen</string>
+    <string name="Info">Über jOS</string>
+    <string name="jOS">jOS-Team</string>
+    <string name="about_team_jf916_role">Leitender Entwicklerr</string>
+    <string name="about_team_bh196_role">Entwickler</string>
+    <string name="error_no_app_to_open_url">Keine App kann diese URL öffnen!</string>
+    <string name="contributors_cloud_fragment_title">jOS-Mitwirkende</string>
+    <string-array name="themes">
+        <item>Holo</item>
+        <item>Material du (m3)</item>
+    </string-array>
+
+    <!-- jOS egg name -->
     <string name="jOS_egg_name">jOS-Osterei</string>
-  <string name="again">Drücken Sie erneut die Zurück-Taste</string>
+
+    <!-- used by DessertCase -->
+    <dimen name="k_dessert_case_cell_size">192dp</dimen>
+    <string name="again">Drücken Sie erneut die Zurück-Taste</string>
 </resources>
