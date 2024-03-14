@@ -15,21 +15,21 @@
     <string name="kbd_settings">キーボードの設定</string>
     <string name="Info">jOSについて</string>
     <string name="jOS">jOSチーム</string>
+    <string name="github" translatable="false">GitHub</string>
     <string name="about_team_jf916_role">リード開発者</string>
     <string name="about_team_bh196_role">開発者</string>
     <string name="error_no_app_to_open_url">この URL を開けるアプリはありません。</string>
     <string name="contributors_cloud_fragment_title">jOS の貢献者</string>
     <string-array name="themes">
         <item>ホロ</item>
-        <item>素材あなた(m3)</item>
+        <item>マテリアルユー(m3)(ダーク)</item>
+        <item>マテリアルユー(m3)(ライト)</item>
     </string-array>
 
     <!-- jOS egg name -->
     <string name="jOS_egg_name">jOS イースターエッグ</string>
-    <!-- Name of the K-release easter egg: a display case for all our tastiest desserts. [CHAR LIMIT=30] -->
 
     <!-- used by DessertCase -->
     <dimen name="k_dessert_case_cell_size">192dp</dimen>
-    <!-- name of the Q easter egg, a nonogram-style icon puzzle -->
     <string name="again">戻るボタンをもう一度押してください</string>
 </resources>

@@ -41,10 +41,6 @@ class CreditsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        if (ThemeEngine.currentTheme != ThemeEngine.getSystemThemeValue(this)) {
-            val intent = intent
-            finish()
-            startActivity(intent)
-        }
+        ThemeEngine.relaunch(this)
     }
 }

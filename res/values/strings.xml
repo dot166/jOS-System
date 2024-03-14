@@ -26,11 +26,13 @@
     <string name="contributors_cloud_fragment_title">jOS Contributors</string>
     <string-array name="themes">
         <item>holo</item>
-        <item>material you (m3)</item>
+        <item>material you (m3) (dark)</item>
+        <item>material you (m3) (light)</item>
     </string-array>
     <string-array name="themesConfig" translatable="false">
         <item>Holo</item>
-        <item>M3</item>
+        <item>M3 Dark</item>
+        <item>M3 Light</item>
     </string-array>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
