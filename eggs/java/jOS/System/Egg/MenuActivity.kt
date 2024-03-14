@@ -1,16 +1,26 @@
 package jOS.System.Egg
 
-import android.app.Activity
 import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import jOS.Core.ActionBar
+import jOS.Core.ThemeEngine
 
-class MenuActivity : Activity() {
+class MenuActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(ThemeEngine.getSystemTheme(this))
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+        ActionBar.actionBarConfig(
+            R.string.app_name,
+            jOS.Core.R.drawable.ic_launcher_j,
+            false,
+            this,
+            ""
+        )
         val ics = findViewById<CardView>(R.id.ics)
         val k = findViewById<CardView>(R.id.k)
         val l = findViewById<CardView>(R.id.l)
@@ -61,6 +71,15 @@ class MenuActivity : Activity() {
             val intent = Intent(Intent.ACTION_MAIN)
             intent.component =
                 ComponentName("com.android.egg", "com.android.egg.quares.QuaresActivity")
+            startActivity(intent)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (ThemeEngine.currentTheme != ThemeEngine.getSystemThemeValue(this)) {
+            val intent = intent
+            finish()
             startActivity(intent)
         }
     }
