@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">jOS-System</string>
-    <string name="settings_name">Einstellungen</string>
     <string name="system_settings">Systemeinstellungen</string>
     <string name="wallpaper_app_name">jOS-Hintergründe</string>
     <string name="wallpaper">Hintergrund</string>
@@ -19,11 +18,6 @@
     <string name="about_team_bh196_role">Entwickler</string>
     <string name="error_no_app_to_open_url">Keine App kann diese URL öffnen!</string>
     <string name="contributors_cloud_fragment_title">jOS-Mitwirkende</string>
-    <string-array name="themes">
-        <item>Holo</item>
-        <item>Material du (m3) (dunkel)</item>
-        <item>Material du (m3) (Licht)</item>
-    </string-array>
 
     <!-- jOS egg name -->
     <string name="jOS_egg_name">jOS-Osterei</string>

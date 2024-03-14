@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">jOS System</string>
-    <string name="settings_name">Settings</string>
     <string name="system_settings">System Settings</string>
     <string name="wallpaper_app_name">jOS Wallpapers</string>
     <string name="wallpaper">Wallpaper</string>
@@ -13,7 +12,6 @@
     <string name="gms">Google Play Settings (GMS(Google Play Services))</string>
     <string name="launcher_settings">Launcher Settings</string>
     <string name="kbd_settings">Keyboard Settings</string>
-    <string name="settings_fragment_name" translatable="false">com.j.jOS.SettingsActivity$LauncherSettingsFragment</string>
     <string name="Info">About jOS</string>
     <string name="jOS">jOS Team</string>
     <string name="github" translatable="false">GitHub</string>
@@ -24,16 +22,6 @@
     <string name="url_github_repo" translatable="false">https://github.com/dot166/jOS-System</string>
     <string name="error_no_app_to_open_url">No app can open this url!</string>
     <string name="contributors_cloud_fragment_title">jOS Contributors</string>
-    <string-array name="themes">
-        <item>holo</item>
-        <item>material you (m3) (dark)</item>
-        <item>material you (m3) (light)</item>
-    </string-array>
-    <string-array name="themesConfig" translatable="false">
-        <item>Holo</item>
-        <item>M3 Dark</item>
-        <item>M3 Light</item>
-    </string-array>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />

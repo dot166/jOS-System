@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">jOSシステム</string>
-    <string name="settings_name">設定</string>
     <string name="system_settings">システム設定</string>
     <string name="wallpaper_app_name">jOSの壁紙</string>
     <string name="wallpaper">壁紙</string>
@@ -15,16 +14,10 @@
     <string name="kbd_settings">キーボードの設定</string>
     <string name="Info">jOSについて</string>
     <string name="jOS">jOSチーム</string>
-    <string name="github" translatable="false">GitHub</string>
     <string name="about_team_jf916_role">リード開発者</string>
     <string name="about_team_bh196_role">開発者</string>
     <string name="error_no_app_to_open_url">この URL を開けるアプリはありません。</string>
     <string name="contributors_cloud_fragment_title">jOS の貢献者</string>
-    <string-array name="themes">
-        <item>ホロ</item>
-        <item>マテリアルユー(m3)(ダーク)</item>
-        <item>マテリアルユー(m3)(ライト)</item>
-    </string-array>
 
     <!-- jOS egg name -->
     <string name="jOS_egg_name">jOS イースターエッグ</string>
