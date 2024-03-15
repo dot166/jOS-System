@@ -42,4 +42,5 @@
     <string name="q_egg_name" translatable="false">Icon Quiz</string>
     <string name="q_egg" translatable="false">Android Q (Quince Tart) (10)</string>
     <string name="again">Push The Back Button Again</string>
+    <string name="settings_fragment_name" translatable="false">jOS.Core.SDKConfigActivity$LauncherSettingsFragment</string>
 </resources>
