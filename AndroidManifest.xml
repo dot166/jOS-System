@@ -15,9 +15,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         tools:replace="android:label">
-        <activity android:name=".ConfigActivity" android:exported="true" android:label="@string/settings_name">
+        <activity android:name=".ConfigActivity" android:exported="true" android:label="@string/sdk_settings_name">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="jOS.System.SDKConfig"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
@@ -68,12 +69,6 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity>
-
-        <provider
-            android:name="jOS.System.database"
-            android:authorities="jOS.Core.ThemeEngine.database"
-            android:enabled="true"
-            android:exported="true" />
     </application>
 
 </manifest>

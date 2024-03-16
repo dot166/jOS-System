@@ -14,13 +14,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/toolbar_layout"/>
+
             <androidx.core.widget.NestedScrollView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/toolbar_layout">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -117,7 +119,7 @@
                                                     app:layout_constraintStart_toStartOf="parent"
                                                     app:layout_constraintTop_toTopOf="@id/layoutDescription1_1"
                                                     app:layout_constraintVertical_bias="0.0"
-                                                    tools:srcCompat="@drawable/ic_app"
+                                                    tools:srcCompat="@drawable/ic_launcher_j"
                                                     tools:visibility="visible" />
 
                                             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -194,7 +196,7 @@
                                                     app:layout_constraintStart_toStartOf="parent"
                                                     app:layout_constraintTop_toTopOf="@id/layoutDescription1_2"
                                                     app:layout_constraintVertical_bias="0.0"
-                                                    tools:srcCompat="@drawable/ic_app"
+                                                    tools:srcCompat="@drawable/ic_launcher_j"
                                                     tools:visibility="visible" />
 
                                             </androidx.constraintlayout.widget.ConstraintLayout>

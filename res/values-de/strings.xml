@@ -25,4 +25,7 @@
     <!-- used by DessertCase -->
     <dimen name="k_dessert_case_cell_size">192dp</dimen>
     <string name="again">Drücken Sie erneut die Zurück-Taste</string>
+    <string name="sdk_settings_name">SDK-Konfiguration</string>
+    <string name="theme_settings">Themen Einstellungen</string>
+    <string name="global_theme_settings">Theme Engine-Einstellungen</string>
 </resources>

@@ -25,4 +25,7 @@
     <!-- used by DessertCase -->
     <dimen name="k_dessert_case_cell_size">192dp</dimen>
     <string name="again">戻るボタンをもう一度押してください</string>
+    <string name="sdk_settings_name">SDK構成</string>
+    <string name="theme_settings">テーマ設定</string>
+    <string name="global_theme_settings">テーマエンジンの設定</string>
 </resources>
