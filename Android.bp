@@ -23,5 +23,5 @@ android_app {
     "androidx.preference_preference",
     ],
 
-    kotlincflags: ["-Xjvm-default=enable"],
+    kotlincflags: ["-Xjvm-default=all"],
 }
