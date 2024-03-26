@@ -7,20 +7,13 @@ import androidx.browser.customtabs.CustomTabsIntent
 import androidx.cardview.widget.CardView
 import jOS.Core.ActionBar
 import jOS.Core.ThemeEngine
+import jOS.Core.jActivity
 
-class CreditsActivity : AppCompatActivity() {
+class CreditsActivity : jActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(ThemeEngine.getSystemTheme(this))
+        configure(R.string.contributors_cloud_fragment_title, R.layout.activity_credits, false)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_credits)
-        ActionBar.actionBarConfig(
-            R.string.contributors_cloud_fragment_title,
-            jOS.Core.R.drawable.ic_launcher_j,
-            false,
-            this,
-            ""
-        )
         val jf916 = findViewById<CardView>(R.id.jf916)
         val bh196 = findViewById<CardView>(R.id.bh196)
 

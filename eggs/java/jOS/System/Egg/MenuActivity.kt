@@ -7,20 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import jOS.Core.ActionBar
 import jOS.Core.ThemeEngine
+import jOS.Core.jActivity
 
-class MenuActivity : AppCompatActivity() {
+class MenuActivity : jActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(ThemeEngine.getSystemTheme(this))
+        configure(R.string.app_name, R.layout.activity_menu, false)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
-        ActionBar.actionBarConfig(
-            R.string.app_name,
-            jOS.Core.R.drawable.ic_launcher_j,
-            false,
-            this,
-            ""
-        )
         val ics = findViewById<CardView>(R.id.ics)
         val k = findViewById<CardView>(R.id.k)
         val l = findViewById<CardView>(R.id.l)
