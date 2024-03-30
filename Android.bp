@@ -14,13 +14,14 @@ android_app {
     manifest: "AndroidManifest.xml",
 
     static_libs: [
-    "j.SDK",
-    "androidx-constraintlayout_constraintlayout",
-    "androidx.cardview_cardview",
-    "androidx.browser_browser",
-    "androidx.coordinatorlayout_coordinatorlayout",
-    "androidx.appcompat_appcompat",
-    "androidx.preference_preference",
+        "j.SDK",
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.cardview_cardview",
+        "androidx.browser_browser",
+        "androidx.coordinatorlayout_coordinatorlayout",
+        "androidx.appcompat_appcompat",
+        "androidx.preference_preference",
+        "com.google.android.material_material",
     ],
 
     kotlincflags: ["-Xjvm-default=all"],
