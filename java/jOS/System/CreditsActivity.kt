@@ -31,9 +31,4 @@ class CreditsActivity : jActivity() {
             intent.launchUrl(this@CreditsActivity, Uri.parse(url))
         }
     }
-
-    override fun onResume() {
-        super.onResume()
-        ThemeEngine.relaunch(this)
-    }
 }

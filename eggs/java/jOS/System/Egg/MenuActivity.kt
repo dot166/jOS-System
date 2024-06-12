@@ -67,9 +67,4 @@ class MenuActivity : jActivity() {
             startActivity(intent)
         }
     }
-
-    override fun onResume() {
-        super.onResume()
-        ThemeEngine.relaunch(this)
-    }
 }
