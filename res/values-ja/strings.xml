@@ -46,4 +46,7 @@
     <string name="sdk_settings_fragment_name" translatable="false">jOS.System.ConfigActivity$jSDKConfigFragment</string>
     <string name="theme_settings">テーマ設定</string>
     <string name="global_theme_settings">テーマエンジンの設定</string>
+    <string name="safevol_settings">セーフボリュームを有効にする</string>
+    <string name="global_safevol_settings">安全なメディア ボリューム (AOSP 機能) が有効かどうかを制御します</string>
+    <string name="audio">オーディオ</string>
 </resources>

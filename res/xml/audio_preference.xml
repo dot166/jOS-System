@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <PreferenceCategory android:key="audio_category"
+            android:title="@string/audio">
+
+                <SwitchPreference
+                    android:title="@string/safevol_settings"
+                    android:key="pref_safevol"
+                    android:summary="@string/global_safevol_settings" />
+
+        </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

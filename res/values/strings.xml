@@ -46,4 +46,8 @@
     <string name="sdk_settings_fragment_name" translatable="false">jOS.System.ConfigActivity$jSDKConfigFragment</string>
     <string name="theme_settings">Theme Settings</string>
     <string name="global_theme_settings">Theme Engine Settings</string>
+    <string name="safevol_settings">Enable Safe Volume</string>
+    <string name="global_safevol_settings">Controls if Safe Media Volume (AOSP Feature) is enabled</string>
+    <string name="audio_settings_fragment_name" translatable="false">jOS.System.AudioConfigActivity$AudioConfigFragment</string>
+    <string name="audio">Audio</string>
 </resources>
