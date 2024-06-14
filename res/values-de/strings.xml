@@ -17,8 +17,7 @@
     <string name="github" translatable="false">GitHub</string>
     <string name="about_team_jf916_role">Leitender Entwickler</string>
     <string name="about_team_bh196_role">Entwickler</string>
-    <string name="about_team_jf916_name" translatable="false">._______166</string>
-    <string name="about_team_bh196_name" translatable="false">bh196</string>
+    <string name="about_graphene_info">Ohne die Arbeit des GrapheneOS-Projekts wäre jOS nicht möglich</string>
     <string name="url_github_repo" translatable="false">https://github.com/dot166/jOS-System</string>
     <string name="error_no_app_to_open_url">Keine App kann diese URL öffnen!</string>
     <string name="contributors_cloud_fragment_title">jOS-Mitwirkende</string>

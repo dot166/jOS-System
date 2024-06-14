@@ -17,11 +17,13 @@
     <string name="github" translatable="false">GitHub</string>
     <string name="about_team_jf916_role">Lead Developer</string>
     <string name="about_team_bh196_role">Developer</string>
+    <string name="about_graphene_info">Without the work of the GrapheneOS Project jOS would not be possible</string>
     <string name="about_team_jf916_name" translatable="false">._______166</string>
     <string name="about_team_bh196_name" translatable="false">bh196</string>
+    <string name="about_credit_graphene" translatable="false">GrapheneOS</string>
     <string name="url_github_repo" translatable="false">https://github.com/dot166/jOS-System</string>
     <string name="error_no_app_to_open_url">No app can open this url!</string>
-    <string name="contributors_cloud_fragment_title">jOS Contributors</string>
+    <string name="contributors_cloud_fragment_title">jOS Contributors and Credits</string>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />

@@ -97,7 +97,7 @@
                                                     <TextView
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
-                                                        android:text="@string/about_team_jf916_name"
+                                                        android:text="@string/about_credit_graphene"
                                                         android:textAppearance="@android:style/TextAppearance.Holo.Large"
                                                         android:textColor="#FFFFFF"
                                                         tools:text="My name" />
@@ -105,9 +105,9 @@
                                                     <TextView
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
-                                                        android:text="@string/about_team_jf916_role"
+                                                        android:text="@string/about_graphene_info"
                                                         android:textAppearance="@android:style/TextAppearance.Holo.Medium"
-                                                        tools:text="Developer"
+                                                        tools:text="GrapheneOS Project"
                                                         tools:visibility="visible" />
                                                 </LinearLayout>
 
@@ -117,7 +117,7 @@
                                                     android:layout_height="40dp"
                                                     android:layout_marginStart="8dp"
                                                     android:padding="4dp"
-                                                    android:src="@drawable/profile_pic_jf916"
+                                                    android:src="@drawable/graphene"
                                                     app:layout_constraintBottom_toBottomOf="@id/layoutDescription1_3"
                                                     app:layout_constraintEnd_toStartOf="@+id/layoutDescription1_3"
                                                     app:layout_constraintStart_toStartOf="parent"
