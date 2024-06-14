@@ -14,7 +14,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/toolbar_layout"/>
+            <jOS.Core.ActionBar2
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:navigationContentDescription="@string/back_button"
+                android:id="@+id/actionbar"/>
 
             <androidx.core.widget.NestedScrollView
                 android:layout_width="0dp"
@@ -22,7 +26,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/toolbar_layout">
+                app:layout_constraintTop_toBottomOf="@id/actionbar">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -49,6 +53,83 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/graphene"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingBottom="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                            <androidx.constraintlayout.widget.ConstraintLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#333333"
+                                                android:padding="8dp">
+
+                                                <LinearLayout
+                                                    android:id="@+id/layoutDescription1_3"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="16dp"
+                                                    android:gravity="center_vertical"
+                                                    android:minHeight="40dp"
+                                                    android:orientation="vertical"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toEndOf="@+id/imageView1_3"
+                                                    app:layout_constraintTop_toTopOf="parent">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/about_team_jf916_name"
+                                                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                                        android:textColor="#FFFFFF"
+                                                        tools:text="My name" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/about_team_jf916_role"
+                                                        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                                        tools:text="Developer"
+                                                        tools:visibility="visible" />
+                                                </LinearLayout>
+
+                                                <ImageView
+                                                    android:id="@+id/imageView1_3"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:layout_marginStart="8dp"
+                                                    android:padding="4dp"
+                                                    android:src="@drawable/profile_pic_jf916"
+                                                    app:layout_constraintBottom_toBottomOf="@id/layoutDescription1_3"
+                                                    app:layout_constraintEnd_toStartOf="@+id/layoutDescription1_3"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="@id/layoutDescription1_3"
+                                                    app:layout_constraintVertical_bias="0.0"
+                                                    tools:srcCompat="@drawable/ic_launcher_j"
+                                                    tools:visibility="visible" />
+
+                                            </androidx.constraintlayout.widget.ConstraintLayout>
+                                        </LinearLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.cardview.widget.CardView>
 
                                 <androidx.cardview.widget.CardView
                                     android:id="@+id/jf916"
