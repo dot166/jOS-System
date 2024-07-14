@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package jOS.System.Egg;
+package jOS.System.Egg.androidI;
 
 import android.animation.TimeAnimator;
 import android.app.Activity;

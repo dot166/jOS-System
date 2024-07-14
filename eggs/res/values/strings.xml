@@ -10,6 +10,8 @@
     <!-- used by DessertCase -->
     <dimen name="k_dessert_case_cell_size">192dp</dimen>
     <string name="p_app_name" translatable="false">PAINT.APK</string>
+<string name="n_app_name">Neko</string>
+    <string name="n_egg" translatable="false">Android Nougat (7)</string> <string name="n_notification_name" translatable="false">Android N Neko</string> <string name="n_notification_channel_name" translatable="false">New cats(N)</string> <string name="n_default_tile_name" translatable="false">\????</string> <string name="notification_title" translatable="false">A cat is here.</string> <string name="n_default_cat_name" translatable="false">Cat #%s</string> <string name="n_confirm_delete" translatable="false">Forget %s?</string> <string-array name="n_food_names" translatable="false"> <item>Empty dish</item> <item>Bits</item> <item>Fish</item> <item>Chicken</item> <item>Treat</item> </string-array> <array name="n_food_icons"> <item>@drawable/n_food_dish</item> <item>@drawable/n_food_bits</item> <item>@drawable/n_food_sysuituna</item> <item>@drawable/n_food_chicken</item> <item>@drawable/n_food_donut</item> </array> <integer-array name="n_food_intervals"> <item>0</item> <item>15</item> <item>30</item> <item>60</item> <item>120</item> </integer-array> <integer-array name="n_food_new_cat_prob"> <item>0</item> <item>5</item> <item>35</item> <item>65</item> <item>90</item> </integer-array> <string name="n_android_nickname" translatable="false">Nougat</string> <color name="n_android_logo_bg">#B5DDEF</color>
     <string name="p_egg" translatable="false">Android Pie(9.0)</string>
     <!-- name of the Q easter egg, a nonogram-style icon puzzle -->
     <string name="q_egg_name" translatable="false">Icon Quiz</string>

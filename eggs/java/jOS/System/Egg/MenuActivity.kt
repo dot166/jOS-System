@@ -8,6 +8,11 @@ import androidx.cardview.widget.CardView
 import jOS.Core.ActionBar
 import jOS.Core.ThemeEngine
 import jOS.Core.jActivity
+import jOS.System.Egg.androidI.*
+import jOS.System.Egg.androidJ.*
+import jOS.System.Egg.androidK.*
+import jOS.System.Egg.androidL.*
+import jOS.System.Egg.androidN.*
 
 class MenuActivity : jActivity() {
 
@@ -15,8 +20,10 @@ class MenuActivity : jActivity() {
         configure(R.string.app_name, R.layout.activity_menu, false)
         super.onCreate(savedInstanceState)
         val ics = findViewById<CardView>(R.id.ics)
+        val j = findViewById<CardView>(R.id.j)
         val k = findViewById<CardView>(R.id.k)
         val l = findViewById<CardView>(R.id.l)
+        val n = findViewById<CardView>(R.id.n)
         val p = findViewById<CardView>(R.id.p)
         val q = findViewById<CardView>(R.id.q)
 
@@ -45,6 +52,17 @@ class MenuActivity : jActivity() {
         l.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, LLandActivity::class.java)
+                    .setFlags(
+                        Intent.FLAG_ACTIVITY_NEW_TASK
+                                or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
+                    )
+            )
+        }
+
+        n.setOnClickListener {
+            startActivity(
+                Intent(this@MenuActivity, PlatLogoActivity::class.java)
                     .setFlags(
                         Intent.FLAG_ACTIVITY_NEW_TASK
                                 or Intent.FLAG_ACTIVITY_CLEAR_TASK
