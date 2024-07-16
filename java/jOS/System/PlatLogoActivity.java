@@ -68,8 +68,6 @@ public class PlatLogoActivity extends Activity {
 
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        
-        android.util.Log.i("PlatLogoActivity", metrics.toString() + "a");
 
         Typeface bold = Typeface.create("sans-serif", Typeface.BOLD);
         Typeface light = Typeface.create("sans-serif-light", Typeface.NORMAL);
