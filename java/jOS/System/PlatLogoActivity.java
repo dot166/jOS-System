@@ -22,18 +22,25 @@ import static jOS.Core.Build.jOS_RELEASE;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
-import android.view.WindowInsets;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AnticipateOvershootInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
@@ -46,13 +53,23 @@ public class PlatLogoActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getWindow().setDecorFitsSystemWindows(false);
-        getWindow().setNavigationBarColor(0);
-        getWindow().setStatusBarColor(0);
-        getWindow().getDecorView().getWindowInsetsController().hide(WindowInsets.Type.systemBars());
+        Window window = getWindow();
+        window.setNavigationBarColor(Color.TRANSPARENT);
+        window.setStatusBarColor(Color.TRANSPARENT);
+
+        WindowManager.LayoutParams attributes = window.getAttributes();
+        attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+        window.setAttributes(attributes);
+
+        WindowCompat.setDecorFitsSystemWindows(window, false);
+        WindowInsetsControllerCompat windowInsetsController = WindowCompat.getInsetsController(window, window.getDecorView());
+        windowInsetsController.hide(WindowInsetsCompat.Type.systemBars());
+        windowInsetsController.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
 
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        
+        android.util.Log.i("PlatLogoActivity", metrics.toString() + "a");
 
         Typeface bold = Typeface.create("sans-serif", Typeface.BOLD);
         Typeface light = Typeface.create("sans-serif-light", Typeface.NORMAL);
