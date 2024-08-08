@@ -1,39 +1,57 @@
 package jOS.System
 
-import android.net.Uri
-import android.os.Bundle
-import androidx.browser.customtabs.CustomTabsIntent
-import androidx.cardview.widget.CardView
-import jOS.Core.jActivity
+import android.content.Context
+import android.content.Intent
+import jOS.Core.SDKTestActivity
+import jOS.Core.jAboutActivity
 
-class CreditsActivity : jActivity() {
+class CreditsActivity : jAboutActivity() {
+    override fun versionIntent(context: Context): Intent {
+        return Intent(context, SDKTestActivity::class.java)
+    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        configure(R.string.contributors_cloud_fragment_title, R.layout.activity_credits, false)
-        super.onCreate(savedInstanceState)
-        val jf916 = findViewById<CardView>(R.id.jf916)
-        val bh196 = findViewById<CardView>(R.id.bh196)
-        val graphene = findViewById<CardView>(R.id.graphene)
+    override fun showOnlyContributors(context: Context): Boolean {
+        return true
+    }
 
-        jf916.setOnClickListener {
-            val url = "https://github.com/dot166"
-            val intent: CustomTabsIntent = CustomTabsIntent.Builder()
-                .build()
-            intent.launchUrl(this@CreditsActivity, Uri.parse(url))
+    override fun product(): List<Contributor> {
+        return object : ArrayList<Contributor>() {
+            init {
+                add(
+                    Contributor(
+                        "._______166",
+                        Role.LeadDev,
+                        "https://avatars.githubusercontent.com/u/62702353",
+                        "https://github.com/dot166"
+                    )
+                )
+                add(
+                    Contributor(
+                        "bh916",
+                        Role.Dev,
+                        "https://avatars.githubusercontent.com/u/138221251",
+                        "https://github.com/bh196"
+                    )
+                )
+                add(
+                    Contributor(
+                        "GrapheneOS",
+                        Role.Graphene,
+                        "https://avatars.githubusercontent.com/u/48847184",
+                        "https://github.com/grapheneos"
+                    )
+                )
+            }
         }
+    }
 
-        bh196.setOnClickListener {
-            val url = "https://github.com/bh196"
-            val intent: CustomTabsIntent = CustomTabsIntent.Builder()
-                .build()
-            intent.launchUrl(this@CreditsActivity, Uri.parse(url))
-        }
+    enum class Role(val descriptionResId: Int) : Roles {
+        LeadDev(jOS.Core.R.string.leaddev),
+        Dev(jOS.Core.R.string.dev),
+        Graphene(R.string.about_graphene_info);
 
-        graphene.setOnClickListener {
-            val url = "https://github.com/GrapheneOS"
-            val intent: CustomTabsIntent = CustomTabsIntent.Builder()
-                .build()
-            intent.launchUrl(this@CreditsActivity, Uri.parse(url))
+        override fun descriptionResId(): Int {
+            return this.descriptionResId
         }
     }
 }
