@@ -18,7 +18,7 @@
         <activity android:name=".ConfigActivity" android:exported="true" android:label="@string/sdk_settings_name">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
-                <action android:name="jOS.System.SDKConfig"/>
+                <action android:name="jOS.System.LibConfig"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 

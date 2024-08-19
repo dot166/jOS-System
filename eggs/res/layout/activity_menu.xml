@@ -89,6 +89,7 @@
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:layout_marginStart="8dp"
+                                        android:contentDescription="@string/i_egg"
                                         android:padding="4dp"
                                         android:src="@drawable/i_platlogo"
                                         app:layout_constraintBottom_toBottomOf="@id/layoutDescription1"
@@ -96,7 +97,6 @@
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="@id/layoutDescription1"
                                         app:layout_constraintVertical_bias="0.0"
-                                        tools:srcCompat="@mipmap/apk"
                                         tools:visibility="visible" />
 
                                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -105,7 +105,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/k"
+                        android:id="@+id/j"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -147,7 +147,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/k_dessert_case"
+                                            android:text="@string/j_egg_name"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Large"
                                             android:textColor="#FFFFFF"
                                             tools:text="Android Easter Egg name" />
@@ -155,7 +155,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/k_egg"
+                                            android:text="@string/j_egg"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Medium"
                                             tools:text="Android Version"
                                             tools:visibility="visible" />
@@ -166,14 +166,14 @@
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:layout_marginStart="8dp"
+                                        android:contentDescription="@string/j_egg"
                                         android:padding="4dp"
-                                        android:src="@drawable/k_platlogo"
+                                        android:src="@drawable/j_platlogo"
                                         app:layout_constraintBottom_toBottomOf="@id/layoutDescription2"
                                         app:layout_constraintEnd_toStartOf="@+id/layoutDescription2"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="@id/layoutDescription2"
                                         app:layout_constraintVertical_bias="0.0"
-                                        tools:srcCompat="@mipmap/apk"
                                         tools:visibility="visible" />
 
                                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -182,7 +182,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/l"
+                        android:id="@+id/k"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -224,7 +224,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/l_lland"
+                                            android:text="@string/k_dessert_case"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Large"
                                             android:textColor="#FFFFFF"
                                             tools:text="Android Easter Egg name" />
@@ -232,7 +232,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/l_egg"
+                                            android:text="@string/k_egg"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Medium"
                                             tools:text="Android Version"
                                             tools:visibility="visible" />
@@ -243,14 +243,14 @@
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:layout_marginStart="8dp"
+                                        android:contentDescription="@string/k_egg"
                                         android:padding="4dp"
-                                        android:src="@drawable/l_icon"
+                                        android:src="@drawable/k_platlogo"
                                         app:layout_constraintBottom_toBottomOf="@id/layoutDescription3"
                                         app:layout_constraintEnd_toStartOf="@+id/layoutDescription3"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="@id/layoutDescription3"
                                         app:layout_constraintVertical_bias="0.0"
-                                        tools:srcCompat="@mipmap/apk"
                                         tools:visibility="visible" />
 
                                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -259,7 +259,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/p"
+                        android:id="@+id/l"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -301,7 +301,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/p_app_name"
+                                            android:text="@string/l_lland"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Large"
                                             android:textColor="#FFFFFF"
                                             tools:text="Android Easter Egg name" />
@@ -309,7 +309,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="@string/p_egg"
+                                            android:text="@string/l_egg"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Medium"
                                             tools:text="Android Version"
                                             tools:visibility="visible" />
@@ -320,14 +320,14 @@
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:layout_marginStart="8dp"
+                                        android:contentDescription="@string/l_egg"
                                         android:padding="4dp"
-                                        android:src="@drawable/p_icon"
+                                        android:src="@drawable/l_icon"
                                         app:layout_constraintBottom_toBottomOf="@id/layoutDescription4"
                                         app:layout_constraintEnd_toStartOf="@+id/layoutDescription4"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="@id/layoutDescription4"
                                         app:layout_constraintVertical_bias="0.0"
-                                        tools:srcCompat="@mipmap/apk"
                                         tools:visibility="visible" />
 
                                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -336,7 +336,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/q"
+                        android:id="@+id/n"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -378,6 +378,160 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
+                                            android:text="@string/n_app_name"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                            android:textColor="#FFFFFF"
+                                            tools:text="Android Easter Egg name" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/n_egg"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                            tools:text="Android Version"
+                                            tools:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="8dp"
+                                        android:contentDescription="@string/n_egg"
+                                        android:padding="4dp"
+                                        android:src="@drawable/n_platlogo"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription5"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription5"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription5"
+                                        app:layout_constraintVertical_bias="0.0"
+                                        tools:visibility="visible" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#333333"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutDescription6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="40dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/p_app_name"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                                            android:textColor="#FFFFFF"
+                                            tools:text="Android Easter Egg name" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/p_egg"
+                                            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                                            tools:text="Android Version"
+                                            tools:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="8dp"
+                                        android:contentDescription="@string/p_egg"
+                                        android:padding="4dp"
+                                        android:src="@drawable/p_icon"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription6"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription6"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription6"
+                                        app:layout_constraintVertical_bias="0.0"
+                                        tools:visibility="visible" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/q"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#333333"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutDescription7"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="40dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
                                             android:text="@string/q_egg_name"
                                             android:textAppearance="@android:style/TextAppearance.Holo.Large"
                                             android:textColor="#FFFFFF"
@@ -393,18 +547,18 @@
                                     </LinearLayout>
 
                                     <ImageView
-                                        android:id="@+id/imageView5"
+                                        android:id="@+id/imageView7"
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:layout_marginStart="8dp"
+                                        android:contentDescription="@string/q_egg"
                                         android:padding="4dp"
                                         android:src="@drawable/q_icon"
-                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription5"
-                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription5"
+                                        app:layout_constraintBottom_toBottomOf="@id/layoutDescription7"
+                                        app:layout_constraintEnd_toStartOf="@+id/layoutDescription7"
                                         app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintTop_toTopOf="@id/layoutDescription5"
+                                        app:layout_constraintTop_toTopOf="@id/layoutDescription7"
                                         app:layout_constraintVertical_bias="0.0"
-                                        tools:srcCompat="@mipmap/apk"
                                         tools:visibility="visible" />
 
                                 </androidx.constraintlayout.widget.ConstraintLayout>

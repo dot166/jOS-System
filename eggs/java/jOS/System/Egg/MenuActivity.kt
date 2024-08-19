@@ -12,7 +12,7 @@ import jOS.System.Egg.androidI.*
 import jOS.System.Egg.androidJ.*
 import jOS.System.Egg.androidK.*
 import jOS.System.Egg.androidL.*
-import jOS.System.Egg.androidN.*
+import jOS.System.Egg.androidN.neko.*
 
 class MenuActivity : jActivity() {
 
@@ -30,6 +30,17 @@ class MenuActivity : jActivity() {
         ics.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, Nyandroid::class.java)
+                    .setFlags(
+                        Intent.FLAG_ACTIVITY_NEW_TASK
+                                or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
+                    )
+            )
+        }
+
+        j.setOnClickListener {
+            startActivity(
+                Intent(this@MenuActivity, BeanBag::class.java)
                     .setFlags(
                         Intent.FLAG_ACTIVITY_NEW_TASK
                                 or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -62,7 +73,7 @@ class MenuActivity : jActivity() {
 
         n.setOnClickListener {
             startActivity(
-                Intent(this@MenuActivity, PlatLogoActivity::class.java)
+                Intent(this@MenuActivity, NekoActivationActivity.class.java)
                     .setFlags(
                         Intent.FLAG_ACTIVITY_NEW_TASK
                                 or Intent.FLAG_ACTIVITY_CLEAR_TASK
