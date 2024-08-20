@@ -29,7 +29,7 @@ public class AudioConfigActivity extends jConfigActivity {
     }
     public static class AudioConfigFragment extends jConfigActivity.LauncherSettingsFragment {
         @Override
-        public boolean hideSDK() {
+        public boolean hideLIB() {
             return true;
         }
         @Override

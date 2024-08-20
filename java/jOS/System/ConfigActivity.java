@@ -23,7 +23,7 @@ public class ConfigActivity extends jConfigActivity {
     }
     public static class jSDKConfigFragment extends jConfigActivity.LauncherSettingsFragment {
         @Override
-        public boolean isSDKConfig() {
+        public boolean isLIBConfig() {
             return true;
         }
         @Override
