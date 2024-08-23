@@ -12,5 +12,9 @@ android_app {
 
     srcs: ["src/**/*.java"],
 
+    static_libs: [
+        "j.Lib",
+    ],
+
     platform_apis: true,
 }
