@@ -1,0 +1,16 @@
+android_app {
+
+    name: "jOSSystemUI",
+    use_resource_processor: true,
+
+    libs: ["SystemUIPluginLib"],
+
+    certificate: "platform",
+    optimize: {
+        enabled: false,
+    },
+
+    srcs: ["src/**/*.java"],
+
+    platform_apis: true,
+}
