@@ -3,10 +3,7 @@ package jOS.System.Egg
 import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import jOS.Core.ActionBar
-import jOS.Core.ThemeEngine
 import jOS.Core.jActivity
 import jOS.System.Egg.androidI.*
 import jOS.System.Egg.androidJ.*
@@ -17,7 +14,7 @@ import jOS.System.Egg.androidN.neko.*
 class MenuActivity : jActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        configure(R.string.app_name, R.layout.activity_menu, false)
+        configure(R.layout.activity_menu, false)
         super.onCreate(savedInstanceState)
         val ics = findViewById<CardView>(R.id.ics)
         val j = findViewById<CardView>(R.id.j)
@@ -73,7 +70,7 @@ class MenuActivity : jActivity() {
 
         n.setOnClickListener {
             startActivity(
-                Intent(this@MenuActivity, NekoActivationActivity.class.java)
+                Intent(this@MenuActivity, NekoActivationActivity::class.java)
                     .setFlags(
                         Intent.FLAG_ACTIVITY_NEW_TASK
                                 or Intent.FLAG_ACTIVITY_CLEAR_TASK

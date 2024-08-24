@@ -39,16 +39,44 @@
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
+        <!-- Nyandroid in space -->
+        <service
+            android:name=".androidI.NyandroidDream"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/i_platlogo"
+            android:label="@string/i_egg_name"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!-- started from ... somewhere -->
         <activity
-            android:name=".androidL.LLandActivity"
+            android:name=".androidJ.BeanBag"
             android:excludeFromRecents="true"
             android:exported="false"
             android:hardwareAccelerated="true"
-            android:icon="@drawable/l_icon"
-            android:label="@string/l_lland"
+            android:icon="@drawable/j_redbean2"
+            android:label="@string/j_egg_name"
             android:launchMode="singleInstance"
-            android:screenOrientation="locked"
-            android:theme="@android:style/Theme.Material.NoActionBar" />
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
+
+        <!-- Beans in space -->
+        <service
+            android:name=".androidJ.BeanBagDream"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/j_redbean2"
+            android:label="@string/j_jelly_bean_dream_name"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
 
         <activity
             android:name=".androidK.DessertCase"
@@ -74,6 +102,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
+
+        <activity
+            android:name=".androidL.LLandActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/l_icon"
+            android:label="@string/l_lland"
+            android:launchMode="singleInstance"
+            android:screenOrientation="locked"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
 
         <!-- Long press the QS tile to get here -->
         <activity
@@ -107,31 +146,6 @@
             android:name=".androidN.neko.NekoActivationActivity"
             android:excludeFromRecents="true"
             android:theme="@android:style/Theme.NoDisplay" />
-
-        <!-- started from ... somewhere -->
-        <activity
-            android:name=".BeanBag"
-            android:excludeFromRecents="true"
-            android:exported="true"
-            android:hardwareAccelerated="true"
-            android:icon="@drawable/j_redbean2"
-            android:label="@string/j_egg_name"
-            android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
-
-        <!-- Beans in space -->
-        <service
-            android:name=".BeanBagDream"
-            android:enabled="false"
-            android:exported="true"
-            android:icon="@drawable/j_redbean2"
-            android:label="@string/j_jelly_bean_dream_name"
-            android:permission="android.permission.BIND_DREAM_SERVICE">
-            <intent-filter>
-                <action android:name="android.service.dreams.DreamService" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </service>
 
         <!-- The quick settings tile, disabled by default -->
         <service

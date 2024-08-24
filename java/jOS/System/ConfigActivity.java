@@ -63,7 +63,7 @@ public class ConfigActivity extends jConfigActivity {
                     });
                     return true;
             }
-            return jOS.System.audioprefs.parseAudioPrefs(preference);
+            return audioprefs.parseAudioPrefs(preference);
         }
     }
 }

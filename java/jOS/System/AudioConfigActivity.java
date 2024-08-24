@@ -58,7 +58,7 @@ public class AudioConfigActivity extends jConfigActivity {
         }
         @Override
         protected boolean extraPrefs(Preference preference) {
-            return jOS.System.audioprefs.parseAudioPrefs(preference);
+            return audioprefs.parseAudioPrefs(preference);
         }
     }
 }

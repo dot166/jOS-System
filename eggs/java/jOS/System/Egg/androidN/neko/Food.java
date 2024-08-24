@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package com.android_n.egg.neko;
+package jOS.System.Egg.androidN.neko;
 
 import android.content.Context;
 import android.content.res.TypedArray;

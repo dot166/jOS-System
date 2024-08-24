@@ -20,6 +20,7 @@ import android.animation.TimeAnimator;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -215,6 +216,11 @@ public class Nyandroid extends Activity {
     @Override
     public void onStart() {
         super.onStart();
+
+        // ACHIEVEMENT UNLOCKED
+        PackageManager pm = getPackageManager();
+        pm.setComponentEnabledSetting(new ComponentName(this, NyandroidDream.class),
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 0);
 
         getWindow().addFlags(
                 WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON

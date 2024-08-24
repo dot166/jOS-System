@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package com.android_n.egg.neko;
+package jOS.System.Egg.androidN.neko;
 
 import android.Manifest;
 import android.app.ActionBar;
@@ -236,7 +236,7 @@ public class NekoLand extends Activity implements PrefsListener {
                             .setTitle(getString(R.string.n_confirm_delete, mCats[position].getName()))
                             .setOnDismissListener((d) -> v.setClickable(true))
                             .setNegativeButton(android.R.string.cancel, null)
-                            .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                            .setPositiveButton(android.R.string.ok, new OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     int i = holder.getBindingAdapterPosition();

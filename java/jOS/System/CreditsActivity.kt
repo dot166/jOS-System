@@ -2,12 +2,12 @@ package jOS.System
 
 import android.content.Context
 import android.content.Intent
-import jOS.Core.SDKTestActivity
+import jOS.Core.LIBTestActivity
 import jOS.Core.jAboutActivity
 
 class CreditsActivity : jAboutActivity() {
     override fun versionIntent(context: Context): Intent {
-        return Intent(context, SDKTestActivity::class.java)
+        return Intent(context, LIBTestActivity::class.java)
     }
 
     override fun showOnlyContributors(context: Context): Boolean {
