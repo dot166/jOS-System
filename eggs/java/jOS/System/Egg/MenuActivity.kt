@@ -24,7 +24,7 @@ class MenuActivity : jActivity() {
         val p = findViewById<CardView>(R.id.p)
         val q = findViewById<CardView>(R.id.q)
 
-        ics.setOnClickListener {
+        ics?.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, Nyandroid::class.java)
                     .setFlags(
@@ -35,7 +35,7 @@ class MenuActivity : jActivity() {
             )
         }
 
-        j.setOnClickListener {
+        j?.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, BeanBag::class.java)
                     .setFlags(
@@ -46,7 +46,7 @@ class MenuActivity : jActivity() {
             )
         }
 
-        k.setOnClickListener {
+        k?.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, DessertCase::class.java)
                     .setFlags(
@@ -57,7 +57,7 @@ class MenuActivity : jActivity() {
             )
         }
 
-        l.setOnClickListener {
+        l?.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, LLandActivity::class.java)
                     .setFlags(
@@ -68,7 +68,7 @@ class MenuActivity : jActivity() {
             )
         }
 
-        n.setOnClickListener {
+        n?.setOnClickListener {
             startActivity(
                 Intent(this@MenuActivity, NekoActivationActivity::class.java)
                     .setFlags(
@@ -79,14 +79,14 @@ class MenuActivity : jActivity() {
             )
         }
 
-        p.setOnClickListener {
+        p?.setOnClickListener {
             val intent = Intent(Intent.ACTION_MAIN)
             intent.component =
                 ComponentName("com.android.egg", "com.android.egg.paint.PaintActivity")
             startActivity(intent)
         }
 
-        q.setOnClickListener {
+        q?.setOnClickListener {
             val intent = Intent(Intent.ACTION_MAIN)
             intent.component =
                 ComponentName("com.android.egg", "com.android.egg.quares.QuaresActivity")
