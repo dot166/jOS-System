@@ -18,4 +18,5 @@ android_app {
     system_ext_specific: true,
 
     platform_apis: true,
+    privileged: true,
 }
