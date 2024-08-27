@@ -1,16 +1,14 @@
 package jOS.System;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceManager;
 
 public class audioprefs {
     public static boolean parseAudioPrefs(Preference preference) {
+        AudioManager am = new AudioManager(preference.getContext());
         Log.i("Preference Logging", preference.getKey());
         switch (preference.getKey()) {
             case "pref_safevol":
@@ -20,14 +18,14 @@ public class audioprefs {
                     public boolean onPreferenceChange(@NonNull Preference preference, Object newValue) {
                         boolean value = (boolean) newValue;
                         if (value) {
-                            AudioManager.enableSafeMediaVolume();
+                            am.enableSafeMediaVolume();
                         } else {
-                            AudioManager.disableSafeMediaVolume();
+                            am.disableSafeMediaVolume();
                         }
                         return true;
                     }
                 });
-                return AudioManager.isSafeMediaVolumeAllowed();
+                return am.isSafeMediaVolumeAllowed();
         }
         return true;
     }

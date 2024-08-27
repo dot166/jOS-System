@@ -16,7 +16,8 @@ import jOS.Core.jConfigActivity;
 public class AudioConfigActivity extends jConfigActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        boolean oldValue = AudioManager.getSafeMediaVolumeState();
+        AudioManager am = new AudioManager(this);
+        boolean oldValue = am.getSafeMediaVolumeState();
         SharedPreferences.Editor prefs = PreferenceManager.getDefaultSharedPreferences(this).edit();
         prefs.putBoolean("pref_safevol", oldValue);
         prefs.commit();
@@ -27,7 +28,7 @@ public class AudioConfigActivity extends jConfigActivity {
     public int preferenceFragmentValue() {
         return R.string.audio_settings_fragment_name;
     }
-    public static class AudioConfigFragment extends jConfigActivity.LauncherSettingsFragment {
+    public static class AudioConfigFragment extends LauncherSettingsFragment {
         @Override
         public boolean hideLIB() {
             return true;

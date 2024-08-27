@@ -1,16 +1,25 @@
 package jOS.System;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.media.AudioManager;
+import android.os.Bundle;
 import android.util.Log;
 
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceManager;
+import androidx.preference.PreferenceScreen;
+
+import java.util.Objects;
 
 import jOS.Core.jConfigActivity;
 
 public class ConfigActivity extends jConfigActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        boolean oldValue = AudioManager.getSafeMediaVolumeState();
+        AudioManager am = new AudioManager(this);
+        boolean oldValue = am.getSafeMediaVolumeState();
         SharedPreferences.Editor prefs = PreferenceManager.getDefaultSharedPreferences(this).edit();
         prefs.putBoolean("pref_safevol", oldValue);
         prefs.commit();
@@ -21,7 +30,7 @@ public class ConfigActivity extends jConfigActivity {
     public int preferenceFragmentValue() {
         return R.string.sdk_settings_fragment_name;
     }
-    public static class jSDKConfigFragment extends jConfigActivity.LauncherSettingsFragment {
+    public static class jSDKConfigFragment extends LauncherSettingsFragment {
         @Override
         public boolean isLIBConfig() {
             return true;
