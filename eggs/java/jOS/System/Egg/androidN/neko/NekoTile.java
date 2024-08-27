@@ -23,7 +23,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import com.android_n.egg.neko.PrefState.PrefsListener;
+import jOS.System.Egg.androidN.neko.PrefState.PrefsListener;
 //import com.android.internal.logging.MetricsLogger;
 
 @RequiresApi(api = Build.VERSION_CODES.N)

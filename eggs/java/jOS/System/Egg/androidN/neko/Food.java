@@ -21,7 +21,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.android_n.egg.R;
+import jOS.System.Egg.R;
 
 
 public class Food {

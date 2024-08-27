@@ -41,8 +41,8 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android_n.egg.R;
-import com.android_n.egg.neko.PrefState.PrefsListener;
+import jOS.System.Egg.R;
+import jOS.System.Egg.androidN.neko.PrefState.PrefsListener;
 import com.dede.basic.ShareCatUtils;
 
 import java.util.Collections;

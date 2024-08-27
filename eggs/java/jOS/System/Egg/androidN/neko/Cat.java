@@ -33,7 +33,7 @@ import android.os.Bundle;
 
 import androidx.annotation.RequiresApi;
 
-import com.android_n.egg.R;
+import jOS.System.Egg.R;
 import com.dede.basic.CatRandom;
 
 import java.io.ByteArrayOutputStream;
