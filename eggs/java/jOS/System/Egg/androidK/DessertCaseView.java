@@ -39,6 +39,8 @@ import android.widget.ImageView;
 import java.util.HashSet;
 import java.util.Set;
 
+import jOS.System.Egg.R;
+
 public class DessertCaseView extends FrameLayout {
     private static final String TAG = DessertCaseView.class.getSimpleName();
 

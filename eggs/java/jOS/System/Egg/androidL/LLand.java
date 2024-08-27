@@ -41,6 +41,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import jOS.System.Egg.R;
+
 import java.util.ArrayList;
 
 public class LLand extends FrameLayout {

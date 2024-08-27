@@ -31,6 +31,8 @@ import android.widget.ImageView;
 
 import java.util.Random;
 
+import jOS.System.Egg.R;
+
 public class Nyandroid extends Activity {
     final static boolean DEBUG = false;
 

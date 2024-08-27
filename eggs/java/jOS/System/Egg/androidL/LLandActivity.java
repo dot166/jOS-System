@@ -21,6 +21,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import jOS.System.Egg.R;
+
 
 public class LLandActivity extends Activity {
     @Override
