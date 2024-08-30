@@ -1,22 +1,60 @@
-android_app {
+// SystemUI Library
+android_library {
+    name: "jOSSystemUI-core",
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java",
+        "src/**/I*.aidl",
+    ],
+    resource_dirs: [
+        "res",
+    ],
+    static_libs: [
+        "SystemUI-core",
+    ],
+    manifest: "AndroidManifest.xml",
+    javacflags: ["-Adagger.fastInit=enabled"],
+    kotlincflags: ["-Xjvm-default=all"],
+    plugins: ["dagger2-compiler"],
+}
 
-    name: "jOSSystemUI",
-    use_resource_processor: true,
-
-    libs: ["SystemUIPluginLib"],
-
-    certificate: "platform",
-    optimize: {
-        enabled: false,
-    },
-
-    srcs: ["src/**/*.java"],
-
+// remove icon and theme attributes from jLib
+android_library {
+    name: "j.Lib.SystemUI",
+    manifest: "LibFixedManifest.xml",
     static_libs: [
         "j.Lib",
     ],
-    system_ext_specific: true,
+}
 
+// The SystemUI itself
+android_app {
+    name: "jOSSystemUI",
+    defaults: [
+        "platform_app_defaults",
+        "SystemUI_optimized_defaults",
+    ],
+    static_libs: [
+        "jOSSystemUI-core",
+        "j.Lib.SystemUI",
+    ],
+    resource_dirs: [],
+    use_embedded_native_libs: true,
     platform_apis: true,
+    system_ext_specific: true,
+    certificate: "platform",
     privileged: true,
+
+    kotlincflags: ["-Xjvm-default=all"],
+    dxflags: ["--multi-dex"],
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+    required: [
+        "privapp_whitelist_com.android.systemui",
+        "wmshell.protolog.json.gz",
+    ],
+    overrides: [
+        "SystemUI",
+    ],
 }

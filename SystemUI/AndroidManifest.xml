@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jOS.System.UI">
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.android.systemui"
+        android:sharedUserId="android.uid.systemui"
+        coreApp="true">
 
-    <permission android:name="com.android.systemui.permission.PLUGIN" />
+    <original-package android:name="com.android.systemui"/>
 
     <application
-        android:label="@string/app_name"
-        android:supportsRtl="true">
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="jOS.System.UI.jOSSystemUIAppComponentFactory">
+
+        <!-- Content goes here -->
 
         <service android:name=".TestButtonProvider"
             android:exported="false"
