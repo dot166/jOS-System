@@ -7,9 +7,10 @@
 
     <original-package android:name="com.android.systemui"/>
 
-    <application
+    <!--<application
         tools:replace="android:appComponentFactory"
-        android:appComponentFactory="jOS.System.UI.jOSSystemUIAppComponentFactory">
+        android:appComponentFactory="jOS.System.UI.jOSSystemUIAppComponentFactory">-->
+    <application>
 
         <!-- Content goes here -->
 
