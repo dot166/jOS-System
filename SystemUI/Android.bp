@@ -36,7 +36,6 @@ android_app {
     ],
     static_libs: [
         "jOSSystemUI-core",
-        "j.Lib.SystemUI",
     ],
     resource_dirs: [],
     use_embedded_native_libs: true,
