@@ -1,5 +1,0 @@
--include ../../../../frameworks/base/packages/SystemUI/proguard_common.flags
-
-# Proguard rules not owned by core SystemUI
--keep class jOS.** { *; }
--keep class com.j.** { *; }
