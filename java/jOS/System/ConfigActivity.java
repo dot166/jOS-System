@@ -18,13 +18,13 @@ import jOS.Core.jConfigActivity;
 public class ConfigActivity extends jConfigActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         AudioManager am = new AudioManager(this);
         boolean oldValue = am.getSafeMediaVolumeState();
         SharedPreferences.Editor prefs = PreferenceManager.getDefaultSharedPreferences(this).edit();
         prefs.putBoolean("pref_safevol", oldValue);
         prefs.commit();
-
-        super.onCreate(savedInstanceState);
     }
     @Override
     public int preferenceFragmentValue() {
