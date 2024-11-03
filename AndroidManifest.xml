@@ -9,29 +9,6 @@
     <application
         android:label="@string/app_name"
         android:supportsRtl="true">
-        <activity android:name=".ConfigActivity" android:exported="true" android:label="@string/sdk_settings_name">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-                <action android:name="jOS.System.LibConfig"/>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/baseline_build_24" />
-            <meta-data
-                android:name="com.android.settings.icon_tintable"
-                android:value="true" />
-            <meta-data
-                android:name="com.android.settings.order"
-                android:value="-254" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/summary_empty" />
-        </activity>
         <activity
             android:name=".PlatLogoActivity"
             android:exported="true"
