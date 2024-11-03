@@ -235,15 +235,6 @@ public class Nyandroid extends Activity {
         super.onResume();
         mBoard = new Board(this, null);
         setContentView(mBoard);
-
-        mBoard.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
-            @Override
-            public void onSystemUiVisibilityChange(int vis) {
-                if (0 == (vis & View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)) {
-                    Nyandroid.this.finish();
-                }
-            }
-        });
     }
 
     @Override
