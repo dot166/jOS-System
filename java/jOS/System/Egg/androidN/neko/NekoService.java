@@ -30,7 +30,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import jOS.System.Egg.R;
+import jOS.System.R;
 
 import java.util.List;
 import java.util.Random;

@@ -28,7 +28,7 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import jOS.System.Egg.R;
+import jOS.System.R;
 
 import java.util.ArrayList;
 

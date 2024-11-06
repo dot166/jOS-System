@@ -39,26 +39,6 @@ public class NekoLockedActivity extends Activity implements OnDismissListener {
 
         mDialog = new NekoDialog(this);
         mDialog.setOnDismissListener(this);
-
-        // Fix A15 EdgeToEdge
-        ViewCompat.setOnApplyWindowInsetsListener(mDialog, (v, windowInsets) -> {
-            Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
-            // Apply the insets as a margin to the view. This solution sets only the
-            // bottom, left, top and right dimensions, but you can apply whichever insets are
-            // appropriate to your layout. You can also update the view padding if that's
-            // more appropriate.
-            ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
-            mlp.leftMargin = insets.left;
-            mlp.bottomMargin = insets.bottom;
-            mlp.rightMargin = insets.right;
-            mlp.topMargin = insets.top;
-            v.setLayoutParams(mlp);
-
-            // Return CONSUMED if you don't want want the window insets to keep passing
-            // down to descendant views.
-            return WindowInsetsCompat.CONSUMED;
-        });
-
         mDialog.show();
     }
 

@@ -40,8 +40,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-import jOS.System.Egg.R;
+import jOS.System.R;
 import jOS.System.Egg.androidN.neko.PrefState.PrefsListener;
 import com.dede.basic.ShareCatUtils;
 
@@ -85,6 +89,20 @@ public class NekoLand extends Activity implements PrefsListener {
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         int numCats = updateCats();
 //        MetricsLogger.histogram(this, "egg_neko_visit_gallery", numCats);
+        // Fix A15 EdgeToEdge
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content), (v, windowInsets) -> {
+            Insets insets = windowInsets.getInsets(
+                    WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.ime()
+                            | WindowInsetsCompat.Type.displayCutout());
+            int statusBarHeight = getWindow().getDecorView().getRootWindowInsets()
+                    .getInsets(WindowInsetsCompat.Type.statusBars()).top;
+            // Apply the insets paddings to the view.
+            v.setPadding(insets.left, statusBarHeight, insets.right, insets.bottom);
+
+            // Return CONSUMED if you don't want the window insets to keep being
+            // passed down to descendant views.
+            return WindowInsetsCompat.CONSUMED;
+        });
     }
 
     @Override

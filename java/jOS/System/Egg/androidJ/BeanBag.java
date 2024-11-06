@@ -38,7 +38,7 @@ import android.widget.ImageView;
 
 import java.util.Random;
 
-import jOS.System.Egg.R;
+import jOS.System.R;
 
 public class BeanBag extends Activity {
     final static boolean DEBUG = false;

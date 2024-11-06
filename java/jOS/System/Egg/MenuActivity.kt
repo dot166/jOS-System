@@ -10,6 +10,7 @@ import jOS.System.Egg.androidJ.*
 import jOS.System.Egg.androidK.*
 import jOS.System.Egg.androidL.*
 import jOS.System.Egg.androidN.neko.*
+import jOS.System.R
 
 class MenuActivity : jActivity() {
 
@@ -47,14 +48,10 @@ class MenuActivity : jActivity() {
         }
 
         k?.setOnClickListener {
-            startActivity(
-                Intent(this@MenuActivity, DessertCase::class.java)
-                    .setFlags(
-                        Intent.FLAG_ACTIVITY_NEW_TASK
-                                or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
-                    )
-            )
+            val intent = Intent(Intent.ACTION_MAIN)
+            intent.component =
+            ComponentName("com.android.systemui", "com.android.systemui.DessertCase")
+            startActivity(intent)
         }
 
         l?.setOnClickListener {
