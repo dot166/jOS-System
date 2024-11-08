@@ -7,7 +7,6 @@ import androidx.cardview.widget.CardView
 import jOS.Core.jActivity
 import jOS.System.Egg.androidI.*
 import jOS.System.Egg.androidJ.*
-import jOS.System.Egg.androidK.*
 import jOS.System.Egg.androidL.*
 import jOS.System.Egg.androidN.neko.*
 import jOS.System.R
