@@ -22,7 +22,7 @@
             android:label="@string/jOS_egg_name"
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".Egg.MenuActivity"
             android:label="@string/jOS_egg_name"
             android:exported="true">
             <intent-filter>
@@ -34,7 +34,7 @@
 
         <!-- started from ... somewhere -->
         <activity
-            android:name=".androidI.Nyandroid"
+            android:name=".Egg.androidI.Nyandroid"
             android:excludeFromRecents="true"
             android:exported="false"
             android:hardwareAccelerated="true"
@@ -43,9 +43,9 @@
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
-        <!-- Nyandroid in space -->
+        <!-- Nyandroids in space -->
         <service
-            android:name=".androidI.NyandroidDream"
+            android:name=".Egg.androidI.NyandroidDream"
             android:enabled="false"
             android:exported="true"
             android:icon="@drawable/i_platlogo"
@@ -59,7 +59,7 @@
 
         <!-- started from ... somewhere -->
         <activity
-            android:name=".androidJ.BeanBag"
+            android:name=".Egg.androidJ.BeanBag"
             android:excludeFromRecents="true"
             android:exported="false"
             android:hardwareAccelerated="true"
@@ -70,7 +70,7 @@
 
         <!-- Beans in space -->
         <service
-            android:name=".androidJ.BeanBagDream"
+            android:name=".Egg.androidJ.BeanBagDream"
             android:enabled="false"
             android:exported="true"
             android:icon="@drawable/j_redbean2"
@@ -83,7 +83,7 @@
         </service>
 
         <activity
-            android:name=".androidL.LLandActivity"
+            android:name=".Egg.androidL.LLandActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:hardwareAccelerated="true"
@@ -95,7 +95,7 @@
 
         <!-- Long press the QS tile to get here -->
         <activity
-            android:name=".androidN.neko.NekoLand"
+            android:name=".Egg.androidN.neko.NekoLand"
             android:exported="true"
             android:icon="@drawable/n_icon"
             android:label="@string/n_app_name"
@@ -108,27 +108,27 @@
 
         <!-- This is where the magic happens -->
         <service
-            android:name=".androidN.neko.NekoService"
+            android:name=".Egg.androidN.neko.NekoService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <!-- Used to show over lock screen -->
         <activity
-            android:name=".androidN.neko.NekoLockedActivity"
+            android:name=".Egg.androidN.neko.NekoLockedActivity"
             android:excludeFromRecents="true"
             android:showOnLockScreen="true"
             android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar" />
 
         <!-- Used to enable easter egg -->
         <activity
-            android:name=".androidN.neko.NekoActivationActivity"
+            android:name=".Egg.androidN.neko.NekoActivationActivity"
             android:excludeFromRecents="true"
             android:theme="@android:style/Theme.NoDisplay" />
 
         <!-- The quick settings tile, disabled by default -->
         <service
-            android:name=".androidN.neko.NekoTile"
+            android:name=".Egg.androidN.neko.NekoTile"
             android:enabled="false"
             android:exported="true"
             android:icon="@drawable/n_stat_icon"
