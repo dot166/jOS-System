@@ -4,6 +4,7 @@
     <string name="about_team_bh196_role">Developer</string>
     <string name="about_graphene_info">Without the work of the GrapheneOS Project jOS would not be possible</string>
     <string name="contributors_cloud_fragment_title">jOS Contributors and Credits</string>
+    <string name="changelog_title">jOS Changelog</string>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />
