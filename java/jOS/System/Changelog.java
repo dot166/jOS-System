@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import jOS.Core.Build;
+import jOS.Core.jWebActivity;
 
 public class Changelog extends jWebActivity{
 
