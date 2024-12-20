@@ -3,8 +3,8 @@ package jOS.System;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import jOS.Core.Build;
-import jOS.Core.jWebActivity;
+import io.github.dot166.jLib.jOS.Build;
+import io.github.dot166.jLib.app.jWebActivity;
 
 public class Changelog extends jWebActivity {
 
