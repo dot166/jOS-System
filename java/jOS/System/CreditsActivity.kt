@@ -46,8 +46,8 @@ class CreditsActivity : jAboutActivity() {
     }
 
     enum class Role(val descriptionResId: Int) : Roles {
-        LeadDev(jOS.Core.R.string.leaddev),
-        Dev(jOS.Core.R.string.dev),
+        LeadDev(io.github.dot166.jLib.R.string.leaddev),
+        Dev(io.github.dot166.jLib.R.string.dev),
         Graphene(R.string.about_graphene_info);
 
         override fun descriptionResId(): Int {

@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">jOS System</string>
-    <string name="about_team_jf916_role">Lead Developer</string>
-    <string name="about_team_bh196_role">Developer</string>
     <string name="about_graphene_info">Without the work of the GrapheneOS Project jOS would not be possible</string>
     <string name="contributors_cloud_fragment_title">jOS Contributors and Credits</string>
-    <string name="changelog_title">jOS Changelog</string>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />
@@ -63,9 +60,6 @@
     <!-- name of the Q easter egg, a nonogram-style icon puzzle -->
     <string name="q_egg_name" translatable="false">Icon Quiz</string>
     <string name="q_egg" translatable="false">Android Q (Quince Tart) (10)</string>
-    <string name="again">Push The Back Button Again</string>
-    <string name="sdk_settings_name">SDK Config</string>
-    <string name="sdk_settings_fragment_name" translatable="false">jOS.System.ConfigActivity$jSDKConfigFragment</string>
     <string name="theme_settings">Theme Settings</string>
     <string name="global_theme_settings">Theme Engine Settings</string>
 </resources>
