@@ -14,8 +14,8 @@ import jOS.System.R
 class MenuActivity : jActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        configure(layoutId = R.layout.activity_menu)
         super.onCreate(savedInstanceState)
+	setContentView(R.layout.activity_menu);
         val ics = findViewById<CardView>(R.id.ics)
         val j = findViewById<CardView>(R.id.j)
         val k = findViewById<CardView>(R.id.k)
