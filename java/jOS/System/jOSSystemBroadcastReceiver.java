@@ -1,21 +1,14 @@
 package jOS.System;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.media.AudioManager;
-import android.os.Build;
 import android.provider.Settings;
 import android.util.Log;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class jOSSystemBroadcastReceiver extends BroadcastReceiver {
     private static final String TAG = jOSSystemBroadcastReceiver.class.getSimpleName();
