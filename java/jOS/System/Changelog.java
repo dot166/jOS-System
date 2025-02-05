@@ -10,7 +10,7 @@ public class Changelog extends jWebActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        configure("https://dot166.github.io/jOS-Updates/" + Build.jOS_RELEASE.replaceAll("-\\(.*","") + "-changelog.html");
+        setUri("https://dot166.github.io/jOS-Updates/" + Build.jOS_RELEASE.replaceAll(".*\\.","") + "-changelog.html");
         super.onCreate(savedInstanceState);
     }
 }
