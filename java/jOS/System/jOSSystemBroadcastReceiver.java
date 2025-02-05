@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.ext.settings.ExtSettings;
 import android.media.AudioManager;
 import android.provider.Settings;
 import android.util.Log;
@@ -24,20 +25,24 @@ public class jOSSystemBroadcastReceiver extends BroadcastReceiver {
             context.registerReceiver(mReceiver, intentFilter);
         } else if (NotificationManager.ACTION_INTERRUPTION_FILTER_CHANGED.equals(action)) {
             Log.i(TAG, "DnD Changed (i think???)");
-            AudioManager audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-            final NotificationManager manager = context.getSystemService(NotificationManager.class);
-            final int zenMode = manager.getZenMode();
+            if (ExtSettings.ENABLE_VIBRATE_ON_DO_NOT_DISTURB.get(context) == true) {
+                AudioManager audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+                final NotificationManager manager = context.getSystemService(NotificationManager.class);
+                final int zenMode = manager.getZenMode();
 
-            switch (zenMode) {
-                case Settings.Global.ZEN_MODE_ALARMS:
-                case Settings.Global.ZEN_MODE_IMPORTANT_INTERRUPTIONS:
-                case Settings.Global.ZEN_MODE_NO_INTERRUPTIONS:
-                    audioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
-                    break;
-                case Settings.Global.ZEN_MODE_OFF:
-                default:
-                    audioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
-                    break;
+                switch (zenMode) {
+                    case Settings.Global.ZEN_MODE_ALARMS:
+                    case Settings.Global.ZEN_MODE_IMPORTANT_INTERRUPTIONS:
+                    case Settings.Global.ZEN_MODE_NO_INTERRUPTIONS:
+                        audioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
+                        break;
+                    case Settings.Global.ZEN_MODE_OFF:
+                    default:
+                        audioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
+                        break;
+                }
+            } else {
+                Log.i(TAG, "Vibrate on DnD is Disabled by the user")
             }
         }
     }
