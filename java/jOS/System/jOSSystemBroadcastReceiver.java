@@ -42,7 +42,7 @@ public class jOSSystemBroadcastReceiver extends BroadcastReceiver {
                         break;
                 }
             } else {
-                Log.i(TAG, "Vibrate on DnD is Disabled by the user")
+                Log.i(TAG, "Vibrate on DnD is Disabled by the user");
             }
         }
     }
