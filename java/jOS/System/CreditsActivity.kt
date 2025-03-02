@@ -20,7 +20,7 @@ class CreditsActivity : jAboutActivity() {
                 add(
                     Contributor(
                         "._______166",
-                        Role.LeadDev,
+                        Role.Maintainer,
                         "https://avatars.githubusercontent.com/u/62702353",
                         "https://github.com/dot166"
                     )
@@ -28,7 +28,7 @@ class CreditsActivity : jAboutActivity() {
                 add(
                     Contributor(
                         "bh916",
-                        Role.Dev,
+                        Role.Contributor,
                         "https://avatars.githubusercontent.com/u/138221251",
                         "https://github.com/bh196"
                     )
@@ -46,8 +46,8 @@ class CreditsActivity : jAboutActivity() {
     }
 
     enum class Role(val descriptionResId: Int) : Roles {
-        LeadDev(io.github.dot166.jLib.R.string.leaddev),
-        Dev(io.github.dot166.jLib.R.string.dev),
+        Maintainer(io.github.dot166.jLib.R.string.maintainer),
+        Contributor(io.github.dot166.jLib.R.string.contributor),
         Graphene(R.string.about_graphene_info);
 
         override fun descriptionResId(): Int {
