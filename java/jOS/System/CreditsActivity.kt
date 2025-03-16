@@ -2,8 +2,8 @@ package jOS.System
 
 import android.content.Context
 import android.content.Intent
-import io.github.dot166.jLib.LIBTestActivity
-import io.github.dot166.jLib.app.jAboutActivity
+import io.github.dot166.jlib.LIBTestActivity
+import io.github.dot166.jlib.app.jAboutActivity
 
 class CreditsActivity : jAboutActivity() {
     override fun versionIntent(context: Context): Intent {

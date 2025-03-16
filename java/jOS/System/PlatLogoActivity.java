@@ -17,7 +17,7 @@
 
 package jOS.System;
 
-import static io.github.dot166.jLib.jOS.Build.jOS_RELEASE;
+import static io.github.dot166.jlib.jos.Build.jOS_RELEASE;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
