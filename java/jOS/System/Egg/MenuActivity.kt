@@ -4,7 +4,7 @@ import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
 import androidx.cardview.widget.CardView
-import io.github.dot166.jLib.app.jActivity
+import io.github.dot166.jlib.app.jActivity
 import jOS.System.Egg.androidI.*
 import jOS.System.Egg.androidJ.*
 import jOS.System.Egg.androidL.*
