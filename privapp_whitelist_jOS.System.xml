@@ -18,5 +18,7 @@
 <permissions>
     <privapp-permissions package="jOS.System">
         <permission name="android.permission.STATUS_BAR_SERVICE"/>
+        <permission name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
     </privapp-permissions>
 </permissions>
