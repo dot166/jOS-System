@@ -25,7 +25,8 @@ public class jOSSystemBroadcastReceiver extends BroadcastReceiver {
             context.registerReceiver(mReceiver, intentFilter);
         } else if (NotificationManager.ACTION_INTERRUPTION_FILTER_CHANGED.equals(action)) {
             Log.i(TAG, "DnD Changed (i think???)");
-            if (ExtSettings.ENABLE_VIBRATE_ON_DO_NOT_DISTURB.get(context) == true) {
+            // force enable it
+            //if (ExtSettings.ENABLE_VIBRATE_ON_DO_NOT_DISTURB.get(context) == true) {
                 AudioManager audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
                 final NotificationManager manager = context.getSystemService(NotificationManager.class);
                 final int zenMode = manager.getZenMode();
@@ -41,9 +42,9 @@ public class jOSSystemBroadcastReceiver extends BroadcastReceiver {
                         audioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
                         break;
                 }
-            } else {
-                Log.i(TAG, "Vibrate on DnD is Disabled by the user");
-            }
+            //} else {
+                //Log.i(TAG, "Vibrate on DnD is Disabled by the user");
+            //}
         }
     }
 }
