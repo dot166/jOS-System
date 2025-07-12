@@ -48,7 +48,7 @@ import com.dede.basic.TransformationMethodUtils;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
-    static final int BGCOLOR = 0xffed1d24;
+    static final int BGCOLOR = 0x40ffc0cb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +82,7 @@ public class PlatLogoActivity extends Activity {
         lp.gravity = Gravity.CENTER;
 
         final ImageView logo = new ImageView(this);
-        logo.setImageResource(R.drawable.k_platlogo);
+        logo.setImageResource(R.drawable.k_platlogo); // TODO: get new platlogo
         logo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         logo.setVisibility(View.INVISIBLE);
 
