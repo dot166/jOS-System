@@ -18,6 +18,7 @@
 package jOS.System;
 
 import static io.github.dot166.jLib.jOS.Build.jOS_RELEASE;
+import static io.github.dot166.jLib.jOS.Build.jOS_CODENAME_SHORT;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -95,7 +96,7 @@ public class PlatLogoActivity extends Activity {
         letter.setTextSize(200);
         letter.setTextColor(0xFFFFFFFF);
         letter.setGravity(Gravity.CENTER);
-        letter.setText("jOS");
+        letter.setText(jOS_CODENAME_SHORT);
 
         final int p = (int) (4 * metrics.density);
 
@@ -171,11 +172,11 @@ public class PlatLogoActivity extends Activity {
         logo.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                if (SpUtils.getLong(v.getContext(), "k_egg_mode", 0)
+                if (SpUtils.getLong(v.getContext(), jOS_CODENAME_SHORT + "_egg_mode", 0)
                         == 0) {
                     // For posterity: the moment this user unlocked the easter egg
                     SpUtils.putLong(v.getContext(),
-                            "k_egg_mode",
+                            jOS_CODENAME_SHORT + "_egg_mode",
                             System.currentTimeMillis());
                 }
                 try {
