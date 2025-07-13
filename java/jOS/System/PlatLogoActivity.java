@@ -48,7 +48,7 @@ import com.dede.basic.TransformationMethodUtils;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
-    static final int BGCOLOR = 0x40ffc0cb;
+    static final int BGCOLOR = 0x80ffc0cb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
