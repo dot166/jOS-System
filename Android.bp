@@ -3,7 +3,6 @@ android_app {
     platform_apis: true,
     certificate: "platform",
     system_ext_specific: true,
-    privileged: true,
 
     resource_dirs: ["res"],
 
@@ -17,15 +16,15 @@ android_app {
     static_libs: [
         "j.Lib"
     ],
-    required: ["privapp_whitelist_jOS.System"],
+    required: ["default-permissions-jOS.System"],
 
     kotlincflags: ["-Xjvm-default=all"],
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_jOS.System",
+    name: "default-permissions-jOS.System",
     system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "privapp_whitelist_jOS.System.xml",
+    sub_dir: "default-permissions",
+    src: "default-permissions-jOS.System.xml",
     filename_from_src: true,
 }

@@ -16,9 +16,8 @@
 ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <permissions>
-    <privapp-permissions package="jOS.System">
-        <permission name="android.permission.STATUS_BAR_SERVICE"/>
+    <package name="jOS.System">
         <permission name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
         <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-    </privapp-permissions>
+    </package>
 </permissions>
