@@ -17,26 +17,6 @@ android_app {
     static_libs: [
         "j.Lib"
     ],
-    required: [
-        "default-permissions-jOS.System",
-        "privapp_whitelist_jOS.System"
-    ],
 
     kotlincflags: ["-Xjvm-default=all"],
-}
-
-prebuilt_etc {
-    name: "privapp_whitelist_jOS.System",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "privapp_whitelist_jOS.System.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
-    name: "default-permissions-jOS.System",
-    system_ext_specific: true,
-    sub_dir: "default-permissions",
-    src: "default-permissions-jOS.System.xml",
-    filename_from_src: true,
 }
