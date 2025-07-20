@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package jOS.System.Egg.androidL;
+package jos.system.egg.android_l;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import jOS.System.R;
+import jos.system.R;
 
 
 public class LLandActivity extends Activity {

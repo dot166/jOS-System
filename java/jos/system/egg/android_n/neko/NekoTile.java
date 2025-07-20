@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package jOS.System.Egg.androidN.neko;
+package jos.system.egg.android_n.neko;
 
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import jOS.System.Egg.androidN.neko.PrefState.PrefsListener;
+import jos.system.egg.android_n.neko.PrefState.PrefsListener;
 //import com.android.internal.logging.MetricsLogger;
 
 @RequiresApi(api = Build.VERSION_CODES.N)

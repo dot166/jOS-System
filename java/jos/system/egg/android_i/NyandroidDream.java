@@ -1,4 +1,4 @@
-package jOS.System.Egg.androidI;
+package jos.system.egg.android_i;
 
 import android.service.dreams.DreamService;
 

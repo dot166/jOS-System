@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package jOS.System.Egg.androidN.neko;
+package jos.system.egg.android_n.neko;
 
 import android.Manifest;
 import android.app.ActionBar;
@@ -42,11 +42,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import jOS.System.R;
-import jOS.System.Egg.androidN.neko.PrefState.PrefsListener;
+import jos.system.R;
+import jos.system.egg.android_n.neko.PrefState.PrefsListener;
 import com.dede.basic.ShareCatUtils;
 
 import java.util.Collections;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package jOS.System.Egg.androidI;
+package jos.system.egg.android_i;
 
 import android.animation.TimeAnimator;
 import android.app.Activity;
@@ -31,7 +31,7 @@ import android.widget.ImageView;
 
 import java.util.Random;
 
-import jOS.System.R;
+import jos.system.R;
 
 public class Nyandroid extends Activity {
     final static boolean DEBUG = false;

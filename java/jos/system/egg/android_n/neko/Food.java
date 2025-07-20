@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package jOS.System.Egg.androidN.neko;
+package jos.system.egg.android_n.neko;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -21,7 +21,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import jOS.System.R;
+import jos.system.R;
 
 
 public class Food {

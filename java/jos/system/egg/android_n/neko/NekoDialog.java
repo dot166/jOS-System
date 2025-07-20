@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package jOS.System.Egg.androidN.neko;
+package jos.system.egg.android_n.neko;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -28,7 +28,7 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import jOS.System.R;
+import jos.system.R;
 
 import java.util.ArrayList;
 

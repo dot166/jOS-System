@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package jOS.System;
+package jos.system;
 
 import static io.github.dot166.jlib.jos.Build.jOS_RELEASE;
 import static io.github.dot166.jlib.jos.Build.jOS_CODENAME_SHORT;
@@ -23,15 +23,10 @@ import static io.github.dot166.jlib.jos.Build.jOS_CODENAME_SHORT;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.os.Build;
-import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AnticipateOvershootInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -39,36 +34,15 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.WindowInsetsControllerCompat;
-
 import com.dede.basic.SpUtils;
 import com.dede.basic.TransformationMethodUtils;
 
 public class PlatLogoActivity extends Activity {
     FrameLayout mContent;
-    static final int BGCOLOR = 0x80ffc0cb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Window window = getWindow();
-        window.setNavigationBarColor(Color.TRANSPARENT);
-        window.setStatusBarColor(Color.TRANSPARENT);
-
-        WindowManager.LayoutParams attributes = window.getAttributes();
-        attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
-        window.setAttributes(attributes);
-
-        WindowCompat.setDecorFitsSystemWindows(window, false);
-        WindowInsetsControllerCompat windowInsetsController = WindowCompat.getInsetsController(window, window.getDecorView());
-        windowInsetsController.hide(WindowInsetsCompat.Type.systemBars());
-        windowInsetsController.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
-
-        DisplayMetrics metrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
         Typeface bold = Typeface.create("sans-serif", Typeface.BOLD);
         Typeface light = Typeface.create("sans-serif-light", Typeface.NORMAL);
@@ -87,7 +61,7 @@ public class PlatLogoActivity extends Activity {
         logo.setVisibility(View.INVISIBLE);
 
         final View bg = new View(this);
-        bg.setBackgroundColor(BGCOLOR);
+        bg.setBackgroundColor(0x80ffc0cb);
         bg.setAlpha(0f);
 
         final TextView letter = new TextView(this);
@@ -98,9 +72,9 @@ public class PlatLogoActivity extends Activity {
         letter.setGravity(Gravity.CENTER);
         letter.setText(jOS_CODENAME_SHORT);
 
-        final int p = (int) (4 * metrics.density);
+        final int p = (int) (4 * getWindowManager().getCurrentWindowMetrics().getDensity());
 
-        String jos_ver = "jOS " + jOS_RELEASE;
+        String jos_ver = "jos " + jOS_RELEASE;
 
         final TextView tv = new TextView(this);
         if (light != null) tv.setTypeface(light);
@@ -184,7 +158,7 @@ public class PlatLogoActivity extends Activity {
                         .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                             | Intent.FLAG_ACTIVITY_CLEAR_TASK
                             | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
-                        .addCategory("jOS.System.category.PLATLOGO"));
+                        .addCategory("jos.system.category.PLATLOGO"));
                 } catch (ActivityNotFoundException ex) {
                     android.util.Log.e("PlatLogoActivity", "Couldn't catch a break.");
                 }

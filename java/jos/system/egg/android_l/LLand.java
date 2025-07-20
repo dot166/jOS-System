@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package jOS.System.Egg.androidL;
+package jos.system.egg.android_l;
 
 import android.animation.TimeAnimator;
 import android.content.Context;
@@ -41,7 +41,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import jOS.System.R;
+import jos.system.R;
 
 import java.util.ArrayList;
 

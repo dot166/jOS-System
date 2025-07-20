@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package jOS.System.Egg.androidJ;
+package jos.system.egg.android_j;
 
 import android.service.dreams.DreamService;
 

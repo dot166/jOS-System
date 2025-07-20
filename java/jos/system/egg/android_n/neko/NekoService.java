@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package jOS.System.Egg.androidN.neko;
+package jos.system.egg.android_n.neko;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -30,7 +30,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import jOS.System.R;
+import jos.system.R;
 
 import java.util.List;
 import java.util.Random;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package jOS.System.Egg.androidJ;
+package jos.system.egg.android_j;
 
 import android.animation.TimeAnimator;
 import android.app.Activity;
@@ -38,7 +38,7 @@ import android.widget.ImageView;
 
 import java.util.Random;
 
-import jOS.System.R;
+import jos.system.R;
 
 public class BeanBag extends Activity {
     final static boolean DEBUG = false;
