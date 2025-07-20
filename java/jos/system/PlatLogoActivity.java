@@ -74,7 +74,7 @@ public class PlatLogoActivity extends Activity {
 
         final int p = (int) (4 * getWindowManager().getCurrentWindowMetrics().getDensity());
 
-        String jos_ver = "jos " + jOS_RELEASE;
+        String jos_ver = "jOS " + jOS_RELEASE;
 
         final TextView tv = new TextView(this);
         if (light != null) tv.setTypeface(light);
