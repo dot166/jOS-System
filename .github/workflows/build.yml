@@ -29,13 +29,13 @@ jobs:
         ./gen-wallpaper-thumbs
 
     - name: Commit changes
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'dot166/jOS_j-Lib' }}
+      if: ${{ github.event_name == 'push' && github.repository == 'dot166/jOS-System' }}
       run: |
         git add .
         git commit -m "Update Wallpaper Thumbnails" || true
 
     - name: Push changes to repo
       uses: ad-m/github-push-action@master
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'dot166/jOS_j-Lib' }}
+      if: ${{ github.event_name == 'push' && github.repository == 'dot166/jOS-System' }}
       with:
         branch: ${{ github.ref }}
