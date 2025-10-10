@@ -155,6 +155,13 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity>
+        <receiver android:name=".StubReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

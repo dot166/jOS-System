@@ -8,6 +8,7 @@ android_app {
 
     srcs: [
         "java/**/*.java",
+        "java/**/*.kt",
     ],
 
     manifest: "AndroidManifest.xml",
@@ -15,4 +16,7 @@ android_app {
     static_libs: [
         "j.Lib"
     ],
+
+    aaptflags: ["--auto-add-overlay"],
+    kotlincflags: ["-Xjvm-default=all"],
 }

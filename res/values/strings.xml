@@ -60,4 +60,13 @@
     <!-- name of the Q easter egg, a nonogram-style icon puzzle -->
     <string name="q_egg_name" translatable="false">Icon Quiz</string>
     <string name="q_egg" translatable="false">Android Q (Quince Tart) (10)</string>
+    <!-- AOSP Customization Things -->
+    <array name="partner_wallpapers">
+        <item>lock01</item>
+        <item>nexus_chroma</item>
+        <item>abstract_orderofchaos</item>
+        <item>ascension_blaze</item>
+        <item>operation</item>
+        <item>urban_nightroad</item>
+    </array>
 </resources>

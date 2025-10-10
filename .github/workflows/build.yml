@@ -1,0 +1,41 @@
+name: Build
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      CARGO_TERM_COLOR: always
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
+
+    - name: Configure git
+      run: |
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+
+    - name: Generate wallpaper thumbnails
+      run: |
+        cd gen-variants
+        cargo update
+        cargo build --release --verbose
+        cp target/release/gen-wallpaper-thumbs ../gen-wallpaper-thumbs
+        cd ..
+        ./gen-wallpaper-thumbs
+
+    - name: Commit changes
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'dot166/jOS_j-Lib' }}
+      run: |
+        git add .
+        git commit -m "Update Wallpaper Thumbnails" || true
+
+    - name: Push changes to repo
+      uses: ad-m/github-push-action@master
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'dot166/jOS_j-Lib' }}
+      with:
+        branch: ${{ github.ref }}
