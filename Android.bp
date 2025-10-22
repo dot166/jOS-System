@@ -19,4 +19,6 @@ android_app {
 
     aaptflags: ["--auto-add-overlay"],
     kotlincflags: ["-Xjvm-default=all"],
+
+    optional_uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
 }
