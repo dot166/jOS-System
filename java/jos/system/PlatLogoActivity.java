@@ -61,7 +61,7 @@ public class PlatLogoActivity extends Activity {
         logo.setVisibility(View.INVISIBLE);
 
         final View bg = new View(this);
-        bg.setBackgroundColor(0x80ffc0cb);
+        bg.setBackgroundColor(getTheme().obtainStyledAttributes(new int[]{com.google.android.material.R.attr.colorSecondary}).getColor(0, 0x80ffc0cb));
         bg.setAlpha(0f);
 
         final TextView letter = new TextView(this);
